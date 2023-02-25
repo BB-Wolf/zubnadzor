@@ -37,6 +37,11 @@ img {
   max-width: 100%;
 }
 
+section{
+  padding:0;
+  margin:0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,6 +65,7 @@ a {
   box-sizing: border-box;
 }
 
+
 .hidden
 {
   display: none !important;
@@ -70,10 +76,20 @@ a {
     padding: 0 30px;
     margin: 0 auto;
     box-sizing: initial;
+    height:auto;
+    
+}
+
+.container_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+      gap: 10%;
 }
 
 .fullwidth-container {
   max-width: 100%;
+  width:100%;
   padding: 0 30px;
   margin: 0 auto;
   box-sizing: initial;
@@ -205,25 +221,82 @@ color: #44606B;
 
 .main-banner
 {
-  height:550px;
-  background-image:url('/wp-content/themes/artfactor/images/main_banner.png');
+ /* background-image:url('/wp-content/themes/artfactor/images/main_banner.png');
   background-repeat: no-repeat;
   background-position: 1048px 0%;
-  background-size: contain;
+  background-size: contain;*/
+  
 }
 
+.main-banner-container__center{
+  flex-direction: column;
+  justify-content: center;
+  height:550px;
+}
+
+.main-banner__img
+{
+  width:500px;
+  z-index:4;
+}
+.main-banner__img img{
+  max-width: unset;
+}
 
 .main-title {
-  font-weight: 700;
+ font-weight: 700;
 font-size: 36px;
 line-height: 100%;
 text-align: center;
 color: #44606B;
 margin-bottom: 52px;
 }
+
+
+.main-banner__text
+{
+  font-family: Oswald;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 760px;
+  color: #fff;
+}
+
+.main-banner_wrapper
+{
+  width:600px;
+}
+
+.main-banner__flowtext-container::before{
+  content:'';
+  height:30px;
+  background: #DBE8FF;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width:1800px;
+transform: translateX(-470px);
+position: relative;
+  top: 71px;
+  display: block;
+  
+}
+
+.main-banner__flowtext{
+  animation: flowtext 30s infinite linear;
+  width:1900px;
+  top: 40px;
+    position: relative;
+}
+
 .menu {
   display: flex;
-  height: 28px;
+  height: 50px;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
@@ -246,3 +319,233 @@ transition: all 0.3s;
   background: #657E88;
 }
 
+
+
+footer{
+  background-color: #0D2E52;
+  width:100%;
+  height:417px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.footer-content{
+
+}
+
+.footer__info > ul{
+  list-style: none;
+}
+
+.footer-clip{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      z-index:1;
+}
+
+.footer-clip__clip1::before{
+  content:'';
+  display: block;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 35% 100%, 70% 0);
+  clip-path: polygon(100% 0%, 100% 100%, 35% 100%, 70% 0);
+  background-color: #194576;
+  width: 716px;
+  height:421px;
+  margin-left:-616px;
+}
+
+.footer-clip__clip2::before{
+  display: block;
+  content:'';
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #11355C;
+    width:531px;
+    height:260px;
+}
+
+
+.about-us,.mission{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top:50px;
+  padding-top:50px;
+  padding-bottom:50px;
+  margin-bottom: 50px;
+  border-bottom:2px solid #474858;
+  gap:53px;
+  padding:54px 0px 97px 0px;
+
+}
+
+
+.directions{
+  display: grid;
+  grid-template-columns: 1fr;
+    margin-top: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      border-bottom: 2px solid #474858;
+}
+.directions__title{
+  text-align: center;
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+}
+
+
+.directions__panes{
+  width:890px;
+  margin:0px auto;
+  padding-top:50px;
+  display: grid;
+  margin-top:20px;
+  grid-template-rows: 2fr;
+  grid-template-columns: 1fr 3fr;
+  gap:32px;
+}
+
+.directions__pane{
+  display: flex;
+  flex-direction: column;
+ width: 468px;
+ height:204px;
+ border-radius: 8px;
+ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+ text-decoration: none;
+cursor:pointer;
+border:0px;
+transition: all 0.2s ease-in;
+justify-content: center;
+align-items: center;
+}
+
+.directions__text{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#474858;
+}
+
+.directions__pane:hover{
+  box-shadow: 0px 0px 1px 1px #FF3C00;
+}
+
+.about-us__title,.mission__title{
+  display: flex;
+  flex-direction: column;
+  padding-left: 26px;
+}
+
+
+.about-us__h1,.mission__h1{
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+
+.about-us__text,.mission__text{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 0px 0px 11px;
+    margin-left: -10px;
+}
+
+
+footer .company{
+  font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#fff;
+    width:100%;
+}
+
+.footer__info{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+
+
+.page{
+  padding-left: 73px;
+  min-height:536px;
+}
+
+.page__title{
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.page__content{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#474858;
+}
+
+.page__leftimg{
+padding-top:30px;
+}
+
+.page__h2{
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+@keyframes flowtext {
+  0% {
+    transform: translate(50%, 0);
+  }
+
+  100% {
+    transform: translate(-160%, 0);
+  }
+}
+
+
+
+@media screen and (max-width:768px)
+{
+  .about-us,.mission{
+    grid-template-columns: 1fr;
+  }
+
+  .about-us__title,.about-us__text,.mission__title,.mission__text{
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+
+}
