@@ -5,7 +5,7 @@ Template Name: Page page
 ?>
 
 <? get_header(); ?>
-<main class="main main--page">
+<main class="main main--page" data-barba="container">
     <div>
         <div class="breadcrumbs"></div>
         <div class="banner">

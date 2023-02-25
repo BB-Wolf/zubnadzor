@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body data-barba="wrapper">
     <header class="header">
         <div class="header__top">
             <div class="header__container container">

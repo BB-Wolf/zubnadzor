@@ -5,7 +5,7 @@ Template Name: Index page
 ?>
 
 <? get_header(); ?>
-<main class="main main--page">
+<main class="main main--page" data-barba="container">
     <section class="main-banner fullwidth-container fullwidth-container_blue">
         <div class="container container_grid main-banner-container__center">
             <div class="main-banner_wrapper">
@@ -25,9 +25,9 @@ Template Name: Index page
             </div>
         </div>
     </section>
-    <section class="container about-us">
+    <section class="container about-us" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
         <div class="about-us__title">
-            <span class="about-us__h1">О нас</span>
+            <span class=" about-us__h1">О нас</span>
             <span class="about-us__text">Центр координации и поддержки
                 стоматологических пациентов </span>
         </div>
@@ -39,29 +39,29 @@ Template Name: Index page
             </div>
         </div>
     </section>
-    <section class="container directions">
+    <section class="container directions" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
         <div class="directions__title">Направления деятельности</div>
         <div class="directions__panes">
-            <a href="#" class="directions__pane">
+            <a href="#" class="directions__pane" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/file.svg' ?>" alt="Регистрация и мониторинг жалоб и обращений" title="Регистрация и мониторинг жалоб и обращений">
                 </div>
                 <div class="directions__text">Регистрация и мониторинг жалоб и обращений</div>
             </a>
-            <a class="directions__pane">
+            <a class="directions__pane" data-aos="zoom-in-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/edit.svg' ?>" alt="Подготовка и составление документов" title="Подготовка и составление документов">
                 </div>
                 <div class="directions__text">Подготовка и составление документов</div>
             </a>
-            <a class="directions__pane">
+            <a class="directions__pane" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/cross.svg' ?>" alt="Подготовка и составление документов" title="Помощь в выборе стоматологических клиник">
 
                 </div>
                 <div class="directions__text">Помощь в выборе стоматологических клиник</div>
             </a>
-            <a class="directions__pane">
+            <a class="directions__pane" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/Shield.svg' ?>" alt="Подготовка и составление документов" title="Взаимодействие с организациями в интересах пациентов">
                 </div>
@@ -69,7 +69,7 @@ Template Name: Index page
             </a>
         </div>
     </section>
-    <section class="container mission" style="border-bottom:unset;">
+    <section class="container mission" style="border-bottom:unset;" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
         <div class="mission__title">
             <div class="mission__h1">Миссия</div>
             <div class="mission__text">Центр координации и поддержки

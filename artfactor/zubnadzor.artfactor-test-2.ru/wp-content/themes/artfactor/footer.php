@@ -43,6 +43,11 @@
     </div>
 </footer>
 
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
 </body>
 
 </html>
