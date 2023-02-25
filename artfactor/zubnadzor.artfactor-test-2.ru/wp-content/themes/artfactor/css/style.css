@@ -211,6 +211,13 @@ color: #44606B;
 
 
 
+.nav-menu{
+  display: flex;
+  align-items: center;
+  height:50px;
+  margin-top:14px;
+}
+
 .list-reset,
 .sub-menu {
   list-style: none;
@@ -294,24 +301,35 @@ position: relative;
     position: relative;
 }
 
-.menu {
+.menu ul {
   display: flex;
   height: 50px;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
   margin-top:10px;
+  gap:30px;
+  list-style: none;
 }
 
-.menu>li>a{
+.menu ul li{
+      border-right: 1px solid black;
+        padding-right: 20px;
+      
+}
+
+.page_item a{
+  font-family: 'Montserrat';
+  font-size: 14px;
   font-weight: 700;
-font-size: 16px;
-text-transform: uppercase;
-color: #FFFFFF;
-padding: 20px 30px;
-display: block;
-background: transparent;
-transition: all 0.3s;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  text-align: right;
+  text-transform: uppercase;
+  color: #474858;
+  display: block;
+  background: transparent;
+  transition: all 0.3s;
 }
 
 .menu>li>a:hover,
@@ -335,7 +353,7 @@ footer{
 
 }
 
-.footer__info > ul{
+.footer-content ul{
   list-style: none;
 }
 
@@ -491,6 +509,9 @@ footer .company{
 .page{
   padding-left: 73px;
   min-height:536px;
+  grid-template-columns: 1fr 4fr;
+    align-items: unset;
+    margin-top: 155px;
 }
 
 .page__title{
@@ -539,8 +560,17 @@ padding-top:30px;
 
 @media screen and (max-width:768px)
 {
-  .about-us,.mission{
+
+  .about-us,.mission,.page{
     grid-template-columns: 1fr;
+  }
+
+.container_grid{
+  gap:2%;
+}
+
+  .page {
+    padding-left:20px;
   }
 
   .about-us__title,.about-us__text,.mission__title,.mission__text{

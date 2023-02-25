@@ -17,7 +17,7 @@ Template Name: Page page
             <?php endif; ?>
         </div>
     </div>
-    <div class="container container_grid page" style="grid-template-columns:1fr 4fr; align-items:unset; margin-top:155px;">
+    <div class="container container_grid page">
         <div>
             <div class="page__title"><?= get_the_title(); ?></div>
             <div class="page__leftimg"></div>

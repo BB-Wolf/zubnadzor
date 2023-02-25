@@ -52,7 +52,7 @@
                     wp_nav_menu(array(
                         'theme_location'  => 'top',
                         'menu'            => '',
-                        'container'       => false,
+                        'container'       => '',
                         'menu_class'      => 'menu list-reset',
                         'menu_id'         => '',
                         'after'           => '<span class="menu-arrow"><svg width="11" height="7" viewBox="0 0 11 7" fill="none">
