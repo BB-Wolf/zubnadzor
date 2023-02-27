@@ -179,6 +179,10 @@ padding-left:33px;
 gap:40px;
 }
 
+.header__mail{
+      padding-top: 23px;
+}
+
 .header__phone::before{content: '';
   background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
   width: 26px;
@@ -365,20 +369,33 @@ border-right: 1px solid black;
   transition: all 0.3s;
 }
 
+.menu-arrow {
+  display: none;
+}
+
+
 .menu>li>a:hover,
 .menu>li.current-menu-item>a {
-  background: #657E88;
+  transition: color 0.2s ease-in;
+  color: #FF3C00;
+  height: 100%;
+  border-bottom: 2px solid #FF3C00;
+  padding-bottom: 35px;
 }
 
 
 
 footer{
-  background-color: #0D2E52;
-  width:100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    background-color: #0D2E52;
+      background-image: url(/wp-content/themes/artfactor/images/footer_clip.svg);
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      background-size: contain;
 }
 
 .footer-content{
@@ -404,6 +421,62 @@ padding:40px;
 .footer__links{
   z-index: 3;
   
+}
+
+.footer__pin,.footer__phone,.footer__mail{
+  position: relative;
+}
+
+.footer__mail a{
+  color:white;
+  font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer__pin::before{
+content: '';
+  line-height: 70px;
+  background-image: url(/wp-content/themes/artfactor/images/ic_baseline-pin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: -30px;
+  display: inherit;
+  top: 22px;
+}
+
+.footer__phone::before {
+  content: '';
+  line-height: 70px;
+  background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: -30px;
+  display: inherit;
+  top: 10px;
+}
+
+.footer__mail::before {
+  content: '';
+  line-height: 70px;
+  background-image: url(/wp-content/themes/artfactor/images/ri_mail-line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: -30px;
+  display: inherit;
+  top: 20px;
 }
 
 .footer-clip{
@@ -546,12 +619,13 @@ footer .company{
     color:#fff;
     width:100%;
     margin-bottom:40px;
+        padding-left: 10px;
 }
 
 .footer__info{
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
-}
+    grid-template-columns: 3fr 2fr 1fr 3fr;
+  }
 
 
 .footer__links li a{
@@ -622,7 +696,40 @@ padding-top:30px;
       display: none;
     }
 
-  .about-us,.mission,.page{
+        .header__address span,
+        .header__phone a {
+          display: none;
+        }
+        .header__text{
+          font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+
+        .header__text_muted {font-family: Montserrat;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          letter-spacing: 0em;
+          text-align: center;}
+
+          .header__companyname {
+          padding:0;
+
+          }
+
+          .header__address {
+            gap:10px;}
+
+          .header__phone::before{
+            top:unset;
+            left:unset;
+          }
+  .about-us,.mission,.page{ 
     grid-template-columns: 1fr;
   }
 
