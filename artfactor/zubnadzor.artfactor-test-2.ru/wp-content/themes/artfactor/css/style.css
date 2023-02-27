@@ -87,6 +87,10 @@ a {
       gap: 10%;
 }
 
+.container_flex{
+  display: flex;
+}
+
 .fullwidth-container {
   max-width: 100%;
   width:100%;
@@ -124,16 +128,17 @@ display: inline-block;
 }
 
 .header__container{
-  padding: 7px 0px 0px 47px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 13px 0px 0px 46px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+    
 }
 
 .header__companyname
 {
-  width:50%;
   text-align: center;
+  padding-left: 87px;
+    padding-top: 10px;
 }
 
 .header__text{
@@ -147,6 +152,9 @@ display: inline-block;
   text-align: center;
   padding-top:10px;
 }
+
+
+
 
 .header__text_muted{
   color:#A6A7BD;
@@ -164,18 +172,33 @@ display: inline-block;
     margin-left: 7%;
 }
 .header__address {
-  
+display:flex;
+align-items:center;
+padding-top:12px;
+padding-left:33px;
+gap:40px;
 }
-.header__phone {
+
+.header__phone::before{content: '';
+  background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
+  width: 26px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: -30px;
 
 }
 
 .header__address span,
 .header__phone a {
   display: block;
-  font-weight: 400;
-font-size: 16px;
-line-height: 100%;
+  font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
 color: #44606B;
 }
 .header__phone a{
@@ -212,10 +235,9 @@ color: #44606B;
 
 
 .nav-menu{
-  display: flex;
-  align-items: center;
   height:50px;
-  margin-top:14px;
+  margin-top: 14px;
+  padding-left: 79px;
 }
 
 .list-reset,
@@ -237,14 +259,16 @@ color: #44606B;
 
 .main-banner-container__center{
   flex-direction: column;
+ /* align-items: center;
   justify-content: center;
-  height:550px;
+  height:550px;*/
 }
 
 .main-banner__img
 {
   width:500px;
   z-index:4;
+  padding-left:66px;
 }
 .main-banner__img img{
   max-width: unset;
@@ -270,61 +294,70 @@ margin-bottom: 52px;
   text-align: left;
   width: 760px;
   color: #fff;
+  margin-top: -130px;
+  margin-left: -4px;
+  margin-right: -6px;
+  
 }
 
 .main-banner_wrapper
 {
-  width:600px;
+  align-items: center;
 }
 
-.main-banner__flowtext-container::before{
-  content:'';
-  height:30px;
+.main-banner__flowtext-container{
+content: '';
+  height: 43px;
   background: #DBE8FF;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  width:1800px;
-transform: translateX(-470px);
-position: relative;
-  top: 71px;
-  display: block;
-  
+  width: 1800px;
+  transform: translateX(-470px);
+  position: relative;
+  display: block;  
+  top:-54px;
 }
 
 .main-banner__flowtext{
   animation: flowtext 30s infinite linear;
   width:1900px;
-  top: 40px;
     position: relative;
+    top:7px;
+  font-family: 'Montserrat';
+  color:#1F66C2;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
-.menu ul {
+.menu {
   display: flex;
   height: 50px;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top:10px;
-  gap:30px;
+  justify-content: space-evenly;
   list-style: none;
 }
 
-.menu ul li{
-      border-right: 1px solid black;
-        padding-right: 20px;
-      
+.menu li{
+border-right: 1px solid black;
+  padding-right: 50px;
+  height: 20px;
+  align-self: center;
+  z-index: 5;
+  text-align: center;
 }
 
-.page_item a{
+.menu li:last-of-type{
+  border-right: unset;
+}
+
+.menu-item a{
   font-family: 'Montserrat';
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0.01em;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   color: #474858;
   display: block;
@@ -342,7 +375,6 @@ position: relative;
 footer{
   background-color: #0D2E52;
   width:100%;
-  height:417px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -350,11 +382,28 @@ footer{
 }
 
 .footer-content{
-
+padding:40px;
 }
 
 .footer-content ul{
   list-style: none;
+}
+
+.footer-content li{
+  font-family:'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#fff;
+    padding:20px;
+}
+
+
+.footer__links{
+  z-index: 3;
+  
 }
 
 .footer-clip{
@@ -364,14 +413,14 @@ footer{
       z-index:1;
 }
 
-.footer-clip__clip1::before{
-  content:'';
+.footer-clip__clip1{
+  
   display: block;
   -webkit-clip-path: polygon(100% 0%, 100% 100%, 35% 100%, 70% 0);
   clip-path: polygon(100% 0%, 100% 100%, 35% 100%, 70% 0);
   background-color: #194576;
   width: 716px;
-  height:421px;
+  height:415px;
   margin-left:-616px;
 }
 
@@ -389,13 +438,12 @@ footer{
 .about-us,.mission{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top:50px;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-bottom: 50px;
-  border-bottom:2px solid #474858;
-  gap:53px;
-  padding:54px 0px 97px 0px;
+  border-bottom: 2px solid #474858;
+  gap: 43px;
+  padding: 93px 8px 95px 0px;
 
 }
 
@@ -497,6 +545,7 @@ footer .company{
     text-align: left;
     color:#fff;
     width:100%;
+    margin-bottom:40px;
 }
 
 .footer__info{
@@ -505,6 +554,15 @@ footer .company{
 }
 
 
+.footer__links li a{
+  color:#fff;
+  font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 .page{
   padding-left: 73px;
@@ -560,6 +618,9 @@ padding-top:30px;
 
 @media screen and (max-width:768px)
 {
+  .header__bottom {
+      display: none;
+    }
 
   .about-us,.mission,.page{
     grid-template-columns: 1fr;

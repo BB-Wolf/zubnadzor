@@ -6,38 +6,39 @@
         <div class="footer__info">
             <div class="footer__address">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="footer__pin">г. Москва,
+                        ул. Кржижановского, д. 21 А</li>
+                    <li class="footer__phone">+7 (999) 660-69-11</li>
+                    <li class="footer_mail">или напишите нам info@zubnadzor.ru</li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="">Проект зубнадзор</a></li>
+                    <li><a href="">Не могу молчать!</a></li>
+                    <li><a href="">Ваша помощь</a></li>
+                    <li><a href="">Миссия</a></li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Инфоблог</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Обратная связь</a></li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Сотрудничестов</a></li>
+                    <li><a href="">Политика конфиденциальности</a></li>
+                    <li><a href="">Условия обработки персональных данных</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="footer-clip">
+    <div class="footer-clip" style="position:absolute;right:0px; z-index:0;">
         <div class="footer-clip__clip2"></div>
         <div class="footer-clip__clip1"></div>
     </div>
