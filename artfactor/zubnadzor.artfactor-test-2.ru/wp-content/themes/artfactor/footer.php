@@ -6,10 +6,12 @@
         <div class="footer__info">
             <div class="footer__address">
                 <ul>
-                    <li class="footer__pin">г. Москва,
-                        ул. Кржижановского, д. 21 А</li>
+                    <li class="footer__pin"><span>г. Москва,<br />
+                            ул. Кржижановского, д. 21 А</span></li>
                     <li class="footer__phone">+7 (999) 660-69-11</li>
-                    <li class="footer_mail">или напишите нам info@zubnadzor.ru</li>
+                    <li class="footer__mail">или напишите нам <br />
+                        <a href="mailto:info@zubnadzor.ru">info@zubnadzor.ru</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__links">
@@ -38,10 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-clip" style="position:absolute;right:0px; z-index:0;">
-        <div class="footer-clip__clip2"></div>
-        <div class="footer-clip__clip1"></div>
-    </div>
+
 </footer>
 
 <script>
