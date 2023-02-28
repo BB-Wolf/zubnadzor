@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Page page
+Template Name: About project
 */
-
 ?>
+
 
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
@@ -18,7 +18,7 @@ Template Name: Page page
             <?php endif; ?>
         </div>
     </div>
-    <div class="container container_grid page">
+    <div class="container container_grid page" style="margin-bottom:100px;">
         <div>
             <div class="page__title"><?= get_the_title(); ?></div>
             <? if (get_field('banner_left_image')) : ?>
@@ -37,6 +37,8 @@ Template Name: Page page
         <div class=" page__content"><?= the_content(); ?></div>
 
     </div>
+    <hr class="container">
+    <? require_once(get_template_directory() . '/include/donations.php'); ?>
 </main>
 <?
 get_footer();

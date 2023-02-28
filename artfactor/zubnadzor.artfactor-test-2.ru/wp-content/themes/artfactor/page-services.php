@@ -1,8 +1,7 @@
 <?php
 /*
-Template Name: Page page
+Template Name: Услуги
 */
-
 ?>
 
 <? get_header(); ?>
@@ -35,7 +34,6 @@ Template Name: Page page
             <? endif; ?>
         </div>
         <div class=" page__content"><?= the_content(); ?></div>
-
     </div>
 </main>
 <?

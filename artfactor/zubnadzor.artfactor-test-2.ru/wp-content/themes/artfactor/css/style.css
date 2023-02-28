@@ -677,6 +677,18 @@ padding-top:30px;
     letter-spacing: 0.01em;
     text-align: left;
 }
+.page__h2_blue{
+  color:#1768C1;
+}
+
+.page__muted{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 @keyframes flowtext {
   0% {
@@ -689,10 +701,162 @@ padding-top:30px;
 }
 
 
+.table{
+  display: table;
+  padding-top:60px;
+  padding-bottom:60px;
+}
 
+.table__row{
+  display: table-row;
+}
+
+.table__cell{
+  display: table-cell;
+  border:1px solid #A6A7BD;
+  padding:20px;
+}
+
+.table__row .table__cell:first-child{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.table__row .table__cell:last-child{
+  font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+        width: auto;
+          min-width: 130px;
+}
+
+.blockquote{
+  background-image: url('/wp-content/themes/artfactor/images/quote.svg');
+  background-color: #7AAFFF;
+  background-repeat: no-repeat;
+  padding:80px;
+  width:100%;
+  margin-top:50px;
+  margin-bottom: 50px;
+  font-family: 'Montserrat';
+   font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  background-position: 30px 80px;
+}
+
+
+
+input[type="checkbox"]:checked~.modal-background {
+  display: block;
+}
+
+input[type="checkbox"]:checked~.modal{
+  display: block;
+}
+
+#modal {display: none;}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9998;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+  padding:0px 40px 40px 40px;
+}
+
+
+
+/* below is optional, it is just an example for the blue button */
+.modal-label {
+  position:relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 40px 10px 50px;
+  color: #474858;
+  box-shadow: 0px 0px 1px 1px #474858;
+ 
+  font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  cursor: pointer;
+  transition:color 0.2s ease-in-out, box-shadow 0.4s ease-in-out,filter 0.2s ease-in;
+}
+
+.modal-label::before{
+  content:'';
+  display: inline-block;
+  background-image:url('/wp-content/themes/artfactor/images/check.svg');
+  position: absolute;
+  width:24px;
+  height: 24px;
+  left: 16px;
+    top: 7px;
+}
+
+.modal-label:hover::before{
+  transition: filter 0.4s ease-in;
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(337deg);
+}
+.modal-label:hover {
+  box-shadow: 0px 0px 1px 1px #FF3C00;
+  color:#FF3C00;
+  transition: color 0.4s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+
+
+.youtube_video {
+  position: relative;
+  padding-bottom: 56.25%;
+  background-image: url('/wp-content/themes/artfactor/images/video.jpg');
+  height: 0;
+}
+
+.youtube_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width:768px)
 {
-  .header__bottom {
+
+  .header__bottom,.page__leftimg {
       display: none;
     }
 
@@ -719,7 +883,7 @@ padding-top:30px;
 
           .header__companyname {
           padding:0;
-
+?
           }
 
           .header__address {
@@ -746,29 +910,4 @@ padding-top:30px;
     padding-bottom:30px;
   }
 
-}
-
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave-active {
-  transition: opacity 0.3s linear;
-}
-
-.fade-leave-to {
-  opacity: 0;
-}
-
-/* Fade in the next container */
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  transition: opacity 0.3s linear;
-}
-
-.fade-enter-to {
-  opacity: 1;
 }

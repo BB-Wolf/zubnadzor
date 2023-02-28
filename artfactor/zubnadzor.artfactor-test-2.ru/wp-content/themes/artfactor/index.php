@@ -69,7 +69,7 @@ Template Name: Index page
             </a>
         </div>
     </section>
-    <section class="container mission" style="border-bottom:unset;" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine">
+    <section id="mission" class="container mission" style="border-bottom:unset;" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine">
         <div class="mission__title">
             <div class="mission__h1">Миссия</div>
             <div class="mission__text">Центр координации и поддержки

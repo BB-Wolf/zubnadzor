@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Page page
+Template Name: Сотрудничество
 */
-
 ?>
+
 
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
@@ -12,9 +12,7 @@ Template Name: Page page
         <div class="banner">
             <?php if (has_post_thumbnail($post->ID)) : ?>
                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-
                 <? echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />'; ?>
-
             <?php endif; ?>
         </div>
     </div>
@@ -37,6 +35,8 @@ Template Name: Page page
         <div class=" page__content"><?= the_content(); ?></div>
 
     </div>
+    <hr class="container">
+    <? require_once(get_template_directory() . '/include/partners.php'); ?>
 </main>
 <?
 get_footer();

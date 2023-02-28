@@ -30,7 +30,7 @@
                 </div>
                 <div class="header__address">
                     <div class="header__phone">
-                        <a href="+7<?= $data['phone_code'] ?><?= $data['phone'] ?>">+7 (999) 323-12-23</a>
+                        <a href="tel:<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a>
                     </div>
                     <div class="header__mail"><a href=""><img src="<?= get_template_directory_uri() ?>/images/ri_mail-line.svg" alt="Отправить письмо" title="Напишите нам на почту"> </a></div>
                     <div class="search">

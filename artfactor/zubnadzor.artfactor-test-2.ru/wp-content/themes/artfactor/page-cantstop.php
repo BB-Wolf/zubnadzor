@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page page
+Template Name: Youtube page
 */
 
 ?>
@@ -34,7 +34,25 @@ Template Name: Page page
                  "></div>
             <? endif; ?>
         </div>
-        <div class=" page__content"><?= the_content(); ?></div>
+        <div class=" page__content">
+            <?= the_content(); ?>
+            <div class="youtube_video" style="margin-top:100px;  <? if (get_field('youtube_video')) : ?>background-image:unset;<? endif; ?>">
+                <? if (get_field('youtube_video')) {
+                    echo '<iframe src="' . get_field('youtube_video') . '" frameborder="0" 
+                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>';
+                }
+                ?>
+            </div>
+            <div style="margin-top:20px;">
+                <input type="checkbox" id="modal">
+                <label for="modal" class="modal-label">Откликнуться</label>
+                <label for="modal" class="modal-background"></label>
+                <div id="feedback" class="modal">
+                    <? echo do_shortcode('[wpforms id="59" title="false"]'); ?>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </main>
