@@ -8,9 +8,9 @@
                 <ul>
                     <li class="footer__pin"><span>г. Москва,<br />
                             ул. Кржижановского, д. 21 А</span></li>
-                    <li class="footer__phone">+7 (999) 660-69-11</li>
-                    <li class="footer__mail">или напишите нам <br />
-                        <a href="mailto:info@zubnadzor.ru">info@zubnadzor.ru</a>
+                    <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
+                    <li class=" footer__mail">или напишите нам <br />
+                        <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
                     </li>
                 </ul>
             </div>

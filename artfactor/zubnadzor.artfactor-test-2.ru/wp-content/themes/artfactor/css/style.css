@@ -252,6 +252,27 @@ color: #44606B;
 }
 
 
+.menu li:hover>.sub-menu
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.sub-menu{
+  display: none;
+  background-color: #fff;
+  position: absolute;
+}
+
+.sub-menu li{
+  border-right: 0 !important;
+  border-bottom:1px solid rgba(0,0,0,0.3);
+padding: 20px 20px 30px 30px;
+}
+
+
 .main-banner
 {
  /* background-image:url('/wp-content/themes/artfactor/images/main_banner.png');
@@ -663,6 +684,7 @@ footer .company{
     letter-spacing: 0em;
     text-align: left;
     color:#474858;
+    margin-bottom:80px;
 }
 
 .page__leftimg{
@@ -689,6 +711,45 @@ padding-top:30px;
     letter-spacing: 0em;
     text-align: left;
 }
+
+.page__muted a{
+  color:inherit;
+
+  
+}
+
+.page__muted li{
+  list-style: none;
+}
+
+.page__news
+{
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+.page__stuff{
+    display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+  
+}
+
+.post-categories{
+  margin:0;
+  padding:0;
+}
+
+.stuff__wrapper{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 
 @keyframes flowtext {
   0% {
@@ -843,6 +904,7 @@ input[type="checkbox"]:checked~.modal{
   position: relative;
   padding-bottom: 56.25%;
   background-image: url('/wp-content/themes/artfactor/images/video.jpg');
+  background-repeat: no-repeat;
   height: 0;
 }
 
@@ -883,7 +945,6 @@ input[type="checkbox"]:checked~.modal{
 
           .header__companyname {
           padding:0;
-?
           }
 
           .header__address {
