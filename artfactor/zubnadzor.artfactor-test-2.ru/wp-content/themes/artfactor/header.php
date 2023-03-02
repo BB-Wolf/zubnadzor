@@ -29,15 +29,23 @@
                         стоматологических пациентов</span>
                 </div>
                 <div class="header__address">
-                    <div class="header__phone">
-                        <a href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a>
-                    </div>
-                    <div class="header__mail"><a href="mailto:<?= esc_html(get_option('contact_email', '')) ?>"><img src="<?= get_template_directory_uri() ?>/images/ri_mail-line.svg" alt="Отправить письмо" title="Напишите нам на почту"> </a></div>
-                    <div class="search">
-                        <img src="" alt="" class="search__icon">
-                        <input type="text" class="search__field hidden">
-                    </div>
-                    <div class="m-active" onclick="mobileMenu()"></div>
+                    <ul>
+                        <li class="header__phone"> <a href="tel:+<?= str_replace(['+', ' ', '-', '(', ')'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
+                        <li class="header__mail "><a href="mailto:<?= esc_html(get_option('contact_email', '')) ?>"></a></li>
+                        <li class="search icon__search" onclick="toggleSearch();"></li>
+                        <li class="search__field">
+                            <form style="width:100%;">
+                                <div style="display:flex;align-items:center; width:100%;">
+                                    <span class="cross-stand-alone" onclick="toggleSearch();"></span>
+                                    <input type="text" class="">
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <div class="m-active" onclick="mobileMenu()"></div>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -64,6 +72,7 @@
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 0,
                         'walker'          => '',
+                        'after' => '<div class="menu__separator">|</div>',
                     )); ?>
                 </nav>
             </div>
@@ -84,6 +93,7 @@
                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     'depth'           => 0,
                     'walker'          => '',
+                    'after' => '',
                 )); ?>
             </nav>
         </div>

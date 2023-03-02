@@ -15,13 +15,14 @@
                                 <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
                             </div>
                             <div>
-                                <a href=""><img src="/wp-content/themes/artfactor/images/logos_telegram.svg"></a>
+                                <a href=""><img src="/wp-content/themes/artfactor/images/logos_telegram.png"></a>
                                 <a href=""><img src="/wp-content/themes/artfactor/images/logos_whatsapp-icon.svg"></a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+
             <div class="footer__links">
                 <ul>
                     <li><a href="/o-proekte/">Проект зубнадзор</a></li>

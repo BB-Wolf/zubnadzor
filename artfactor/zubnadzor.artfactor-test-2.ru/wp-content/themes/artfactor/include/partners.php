@@ -1,4 +1,4 @@
-<div class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+<div id="partners" class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
     <div>
         <div class="page__title">Партнеры</div>
         <div class="page__leftimg"></div>

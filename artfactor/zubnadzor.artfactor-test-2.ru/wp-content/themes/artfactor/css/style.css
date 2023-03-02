@@ -72,7 +72,297 @@ a {
   display: none !important;
 }
 
+/*** HEADER SECTION ********************************/
+
+.header__address {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 32px;
+  justify-content: center;
+}
+
+
+.header__address ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  gap:21px;
+}
+
+
+
+.header__container {
+  /* padding: 13px 0px 0px 46px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;*/
+  padding: 13px 0px 0px 46px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.header__companyname {
+  text-align: center;
+  padding-left: 87px;
+  padding-top: 10px;
+}
+
+.header__text {
+  max-width: 505px;
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+
+.header__text_muted {
+  color: #A6A7BD;
+  max-width: 506px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+.header__button {
+  width: 243px;
+  margin-left: 7%;
+}
+
+.header__mail{
+  position: relative;
+}
+
+.header__mail a {
+  width:28px;
+  display: block;
+  height:28px;
+}
+
+.header__mail a::before {
+      content: '';
+    background-image: url(/wp-content/themes/artfactor/images/ri_mail-line.svg);
+    width: 26px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+
+.header__phone::before {
+    content: '';
+    background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
+    width: 26px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+
+.header__phone{
+  margin-right:19px;
+}
+
+
+.header__address span,
+.header__phone a {
+  display: block;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #44606B;
+}
+
+
+.header__time {
+  text-align: center;
+  font-size: 14px;
+  line-height: 100%;
+  margin-bottom: 12px;
+  color: #44606B;
+}
+
+.header__bottom {
+  padding: 0;
+  background: #fff;
+  margin-top:20px;
+  box-shadow: 0px -3px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header__contact a {
+  margin-right: 10px;
+  height: 24px;
+}
+
+.header__close {
+  display: none;
+}
+
+
+
+
+.nav-menu {
+ height:50px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.list-reset,
+.sub-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu li:hover>.sub-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.sub-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+  width:100%;
+}
+
+.sub-menu li {
+  border-right: 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 5%);
+  width: 100%;
+
+}
+
+.sub-menu li a {
+  padding:0;
+  border-bottom: 2px solid transparent;
+  
+}
+
+.sub-menu li a:hover {
+  color: #FF3C00;
+  margin:0;
+}
+
+
+.menu__separator {
+  color: #44606B !important;
+}
+
+.sub-menu  .menu__separator{
+  display: none;
+}
+
+.search {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.search::before {
+  content: ' ';
+  white-space: pre;
+  width: 0;
+  display: block;
+}
+
+
+.search__field{
+  position: absolute;
+  width:0px;
+  display: flex;
+  transition: width 250ms ease-in-out;
+  overflow: hidden;
+  
+}
+
+.search__field_active{
+  max-width:100%;
+  width:100%;
+  overflow: visible !important;
+}
+
+.search__field input[type="text"]
+{
+  width:100%;
+  border-radius: 5px;
+  outline:none;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 20%);
+  padding:15px 15px 15px 35px;
+}
+
+
+
+.cross-stand-alone {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  left:7px;
+  cursor: pointer;
+}
+.cross-stand-alone:before, .cross-stand-alone:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #000;
+  border-radius: 4px;
+}
+.cross-stand-alone:before {
+  transform: rotate(45deg);
+}
+.cross-stand-alone:after {
+  transform: rotate(-45deg);
+}
+.cross-stand-alone span {
+  display: block;
+}
+
+/*** END HEADER SECTION ********************************/
+
 .container {
+  width:100%;
   max-width: 1500px;
   padding: 0 30px;
   margin: 0 auto;
@@ -130,183 +420,17 @@ a {
   background: #EE6161;
 }
 
-.header__container {
- /* padding: 13px 0px 0px 46px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;*/
-      display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-.header__companyname {
-  text-align: center;
-  padding-left: 87px;
-  padding-top: 10px;
-}
-
-.header__text {
-  max-width: 505px;
-  display: block;
-  font-family: 'Montserrat';
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: center;
-  padding-top: 10px;
-}
-
-
-
-
-.header__text_muted {
-  color: #A6A7BD;
-  max-width: 506px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-
-.header__button {
-  width: 243px;
-  margin-left: 7%;
-}
-
-.header__address {
-  /*display: flex;
-  align-items: center;
-  padding-top: 12px;
-  padding-left: 33px;
-  gap: 40px;*/
-      display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.header__mail {
-  padding-top: 23px;
-}
-
-.header__phone::before {
-  content: '';
-  background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
-  width: 26px;
-  height: 30px;
-  display: block;
-  position: relative;
-  top: 30px;
-  left: -30px;
-
-}
-
-.header__address span,
-.header__phone a {
-  display: block;
-   font-family: Montserrat;
-font-size: 22px;
-font-weight: 500;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-
-  color: #44606B;
-}
-
-
-.header__time {
-  text-align: center;
-  font-size: 14px;
-  line-height: 100%;
-  margin-bottom: 12px;
-  color: #44606B;
-}
-
-.header__bottom {
-  padding: 0;
-  background: #fff;
-  box-shadow: 0px -3px 4px 1px rgba(0, 0, 0, 0.1);
-}
-
-.header__contact {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.header__contact a {
-  margin-right: 10px;
-  height: 24px;
-}
-
-.header__close {
-  display: none;
-  ;
-}
-
-
-
-.nav-menu {
-  height: 50px;
-  margin-top: 14px;
-  padding-left: 79px;
-}
-
-.list-reset,
-.sub-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-.menu li:hover>.sub-menu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.sub-menu {
-  display: none;
-  background-color: #fff;
-  position: absolute;
-  top: 35px;
-  left: -10px;
-}
-
-.sub-menu li {
-  border-right: 0 !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 20px 20px 30px 30px;
-  box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 5%);
-  widtH: 100%;
-
-}
-
-.sub-menu li a {
-  text-align: left;
-}
-
-.sub-menu li a:hover {
-  color: #FF3C00;
-}
-
 
 .icon__users {
   background: url('/wp-content/themes/artfactor/images/users.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 57px !important;
+  padding: 13px 57px 15px 57px !important;
 }
 
 .icon__edit {
   background: url('/wp-content/themes/artfactor/images/edit.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 57px !important;
+  padding: 13px 57px 15px 57px !important;
 }
 
 .icon__phone {
@@ -323,6 +447,12 @@ text-align: left;
 
 .icon__email {
   background: url('/wp-content/themes/artfactor/images/ri_mail-line.svg') no-repeat 2% center;
+  list-style: none;
+  padding: 13px 2px 15px 57px !important;
+}
+
+.icon__search {
+  background: url('/wp-content/themes/artfactor/images/search.svg') no-repeat 2% center;
   list-style: none;
   padding: 13px 2px 15px 57px !important;
 }
@@ -360,7 +490,7 @@ text-align: left;
 
 .main-banner-container__center {
   flex-direction: column;
-  height: 510px;
+  height: 507px;
   grid-template-columns: unset;
   /* align-items: center;
   justify-content: center;
@@ -436,21 +566,25 @@ text-align: left;
 }
 
 .menu {
-  display: flex;
-  height: 50px;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
+   display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .menu li {
-  border-right: 1px solid black;
-  padding-right: 50px;
-  height: 20px;
-  align-self: center;
-  z-index: 5;
-  text-align: center;
-  position: relative;
+      align-self: center;
+    z-index: 5;
+    text-align: center;
+    position: relative;
+    width: 100%;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .menu li:last-of-type {
@@ -458,17 +592,22 @@ text-align: left;
 }
 
 .menu-item a {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #474858;
-  display: block;
-  background: transparent;
-  transition: all 0.3s;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #474858;
+    background: transparent;
+    transition: all 0.3s;
+    padding-left: 16px;
+    padding-right: 35px;
+    margin: 0 auto;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-out;
 }
 
 .menu-arrow {
@@ -476,15 +615,22 @@ text-align: left;
 }
 
 
-.menu>li>a:hover,
-.menu>li.current-menu-item>a {
-  transition: color 0.2s ease-in;
-  color: #FF3C00;
-  height: 100%;
-  border-bottom: 2px solid #FF3C00;
-  padding-bottom: 35px;
+.menu-item a:hover {
+    transition: color 0.2s ease-in,border-bottom 0.2s ease-in;
+    color: #FF3C00;
+    display: inline-block;
+    border-bottom: 2px solid #FF3C00;
+    margin: 2px auto;
+    height:100%;
+    width: 100%;
 }
 
+
+.menu>li.current-menu-item a{
+ color: #FF3C00;
+ border-bottom: 2px solid #FF3C00;
+ width:100%;
+}
 
 
 footer {
@@ -511,7 +657,7 @@ footer {
 .footer-content li {
   font-family: 'Montserrat';
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
@@ -530,6 +676,8 @@ footer {
 .footer__mail {
   position: relative;
 }
+
+
 
 .footer__mail a {
   color: white;
@@ -558,29 +706,30 @@ footer {
 .footer__phone::before {
   content: '';
   line-height: 70px;
-  background-image: url(/wp-content/themes/artfactor/images/ic_baseline-phone.svg);
+  background-image: url(/wp-content/themes/artfactor/images/phone_white.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  left: -30px;
+  left: -20px;
   display: inherit;
-  top: 10px;
+  background-position: left center;
 }
 
 .footer__mail::before {
   content: '';
   line-height: 70px;
-  background-image: url(/wp-content/themes/artfactor/images/ri_mail-line.svg);
+  background-image: url(/wp-content/themes/artfactor/images/email_white.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  left: -30px;
+  left: -20px;
   display: inherit;
-  top: 20px;
+   background-position: left center;
+  top:35px;
 }
 
 .footer-clip {
@@ -663,7 +812,7 @@ footer {
   width: 468px;
   height: 204px;
   border-radius: 8px;
-  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   cursor: pointer;
   border: 0px;
@@ -718,8 +867,12 @@ footer {
 }
 
 
+.about-us__text_big{
+  font-size:24px;
+}
+
 footer .company {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -733,7 +886,7 @@ footer .company {
 
 .footer__info {
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr 3fr;
+  grid-template-columns: 3fr 2fr 2fr 3fr;
 }
 
 
@@ -744,7 +897,13 @@ footer .company {
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
+  transition: color 0.25s ease-in;
   text-align: left;
+}
+
+.footer__links li a:hover {
+  color:#FF3C00;
+  transition: color 0.25s ease-in;
 }
 
 .footer__mail_grid {
@@ -755,9 +914,9 @@ footer .company {
 .page {
   padding-left: 73px;
   min-height: 536px;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
   align-items: unset;
-  margin-top: 155px;
+  margin-top: 100px;
 }
 
 .page__title {
@@ -784,6 +943,17 @@ footer .company {
   padding-top: 30px;
 }
 
+.page__h1{
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  display: inline-block;
+}
+
+
 .page__h2 {
   font-family: Oswald;
   font-size: 24px;
@@ -791,7 +961,14 @@ footer .company {
   line-height: 28px;
   letter-spacing: 0.01em;
   text-align: left;
+  display: inline-block;
 }
+
+.page_h2_padded{
+   padding-top:30px;
+   padding-bottom:16px;
+}
+
 
 .page__h2_blue {
   color: #1768C1;
@@ -834,10 +1011,10 @@ footer .company {
 }
 
 .page__documentslist li {
-  ;
+
   background: url('/wp-content/themes/artfactor/images/Blank_alt_light.svg') no-repeat left top;
   list-style: none;
-  padding: 13px 2px 15px 57px;
+  padding: 13px 2px 15px 60px;
 }
 
 
@@ -850,6 +1027,10 @@ footer .company {
   text-align: left;
   color: #474858;
   text-decoration: underline;
+}
+
+.page__documentslist li a:hover {
+  color:#FF3C00;
 }
 
 .post-categories {
@@ -892,13 +1073,19 @@ footer .company {
   text-align: left;
 }
 
+.kb_sep{
+  margin-left:10px;
+  margin-right:10px;
+}
 
 
 
 .table {
   display: table;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+      border-collapse: collapse;
+
 }
 
 .table__row {
@@ -935,7 +1122,7 @@ footer .company {
   background-image: url('/wp-content/themes/artfactor/images/quote.svg');
   background-color: #7AAFFF;
   background-repeat: no-repeat;
-  padding: 80px;
+  padding: 100px;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -946,7 +1133,8 @@ footer .company {
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  background-position: 30px 80px;
+  background-position: 60px 100px;
+  border-radius: 10px;
 }
 
 .redquotes::before {
@@ -1003,15 +1191,15 @@ input[type="checkbox"]:checked~.modal {
 
 
 
+
 /* below is optional, it is just an example for the blue button */
 .modal-label {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
-  padding: 10px 40px 10px 50px;
+  padding: 10px 40px 10px 53px;
   color: #474858;
   box-shadow: 0px 0px 1px 1px #474858;
-
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
@@ -1029,18 +1217,17 @@ input[type="checkbox"]:checked~.modal {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 16px;
-  top: 7px;
+  left: 27px;
+  top: 6px;
 }
 
 .modal-label:hover::before {
-  transition: filter 0.4s ease-in;
+  transition: filter 0.2s ease-in;
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(337deg);
 }
 
 .modal-label:hover {
   box-shadow: 0px 0px 1px 1px #FF3C00;
-  color: #FF3C00;
   transition: color 0.4s ease-in-out, box-shadow 0.2s ease-in-out;
 
 }
@@ -1063,310 +1250,28 @@ input[type="checkbox"]:checked~.modal {
   height: 100%;
 }
 
-@media screen and (max-width:768px) {
-
-  .header__bottom {
-    margin-top: 21px;
-  }
-
-  .nav-menu,
-  .page__leftimg {
-    display: none;
-  }
-
-  .header__address {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 32px;
-    justify-content: center;
-  }
-
-  .header__address span,
-  .header__phone a {
-    display: none;
-  }
-
-  .header__text {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  .header__mail {
-    padding: 0;
-  }
-
-
-  .header__text_muted {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  .header__companyname {
-    padding: 0;
-  }
-
-  .header__address {
-    gap: 10px;
-  }
-
-  .header__phone::before {
-    top: unset;
-    left: unset;
-  }
-
-  .about-us,
-  .mission,
-  .page {
-    grid-template-columns: 1fr;
-  }
-
-  .about-us,
-  .mission {
-    padding: 3px 8px 95px 0px;
-  }
-
-  .footer-content {
-    padding: 0 !important;
-  }
-
-  .footer__info {
-    grid-template-columns: 1fr;
-  }
-
-  .footer__address {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .contacts__page {
-    grid-template-columns: 1fr;
-  }
-
-  .contacts__page .page__content {
-    margin: 0;
-  }
-
-  .container_grid {
-    gap: 2%;
-  }
-
-  .page {
-    padding-left: 20px;
-    margin-top: 60px;
-  }
-
-  .about-us__title,
-  .about-us__text,
-  .mission__title,
-  .mission__text {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .company {
-    padding-top: 20px;
-  }
-
-
-
-  .directions__panes {
-    margin: 0px auto;
-    padding-top: 50px;
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    width: unset;
-  }
-
-  .directions__pane {
-    display: flex;
-    flex-direction: column;
-    width: 358px;
-    height: 204px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
-    text-decoration: none;
-    cursor: pointer;
-    border: 0px;
-    transition: all 0.2s ease-in;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .main-banner {
-    grid-template-columns: unset !important;
-  }
-
-  .main-banner__text {
-    font-family: Oswald;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: #fff;
-    margin: 0;
-    width: 50%;
-    padding-left: 50px;
-  }
-
-  .main-banner_wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .main-banner-container__center {
-    flex-direction: column;
-    height: unset;
-    grid-template-columns: unset;
-    padding: 0;
-    margin: 0;
-  }
-
-  .fullwidth-container {
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: initial;
-    padding: 0;
-    widtH: unset;
-  }
-
-  .container_flex {
-    flex-wrap: wrap;
-  }
-
-  .main-banner__img {
-    width: 50%;
-    padding: 0;
-  }
-
-  .main-banner__img img {
-    display: none;
-  }
-
-
-  .main-banner__show_background {}
-
-  .main-banner__flowtext-container {
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: initial;
-    padding: 0;
-    width: unset;
-    overflow: hidden;
-    position: unset;
-    transform: unset;
-  }
-
-  .main-banner__flowtext {
-    animation: flowtext 30s infinite linear;
-    width: 1900px;
-    position: relative;
-    top: 7px;
-    font-family: 'Montserrat';
-    color: #1F66C2;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-
-  .m-active {
-    width: 32px;
-    height: 32px;
-    background-image: url('/wp-content/themes/artfactor/images/mobile-menu.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -2px;
-  }
-
-  .mobile__menu {
-    width: 100%;
-    height:100%;
-    background: white;
-    display: none;
-    position: absolute;
-    z-index: 10;
-    transition: right 0.3s ease-in;
-  }
-
-  .mobile__menu .nav-menu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    height: 100%;
-    padding: 20px;
-
-  }
-
-  .m-menu li {
-    border-right: 0 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 20px 20px 30px 30px;
-    box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 5%);
-    widtH: 100%;
-  }
+.services__heading a{
+  font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #474858;
+text-decoration: underline;
 }
 
 
-@media screen and (min-width:769px) {
 
-  .main-banner__img {
-    background-image: unset !important;
-  }
-
+.pt_30{
+  padding-top:30px;
 }
 
-
-@media screen and (min-width:320px) and (max-width:767px) {
-  .header__companyname {
-    display: none;
-  }
-
-
-  .directions__panes {
-    grid-template-columns: 1fr;
-  }
-
-  .directions__pane {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 204px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
-    text-decoration: none;
-    cursor: pointer;
-    border: 0px;
-    transition: all 0.2s ease-in;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mobile__menu {
-    width: 100%;
-    background: white;
-  }
-
-  .mobile__menu .nav-menu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    height: 100%;
-    padding: 20px;
-
-  }
+.pt_60{
+  padding-top:60px;
 }
+
+.pb_16{
+  padding-bottom:16px;
+}
+

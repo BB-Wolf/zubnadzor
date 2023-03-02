@@ -16,6 +16,7 @@ function add_styles()
 {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.min.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
+    wp_enqueue_style('resp', get_template_directory_uri() . '/css/media.css');
     wp_enqueue_style('aos', get_template_directory_uri() . '/css/aos.css');
 }
 
