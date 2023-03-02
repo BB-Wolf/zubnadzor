@@ -9,31 +9,39 @@
                     <li class="footer__pin"><span>г. Москва,<br />
                             ул. Кржижановского, д. 21 А</span></li>
                     <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
-                    <li class=" footer__mail">или напишите нам <br />
-                        <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
+                    <li class="footer__mail">
+                        <div class="footer__mail_grid">
+                            <div>или напишите нам <br />
+                                <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="/wp-content/themes/artfactor/images/logos_telegram.svg"></a>
+                                <a href=""><img src="/wp-content/themes/artfactor/images/logos_whatsapp-icon.svg"></a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li><a href="">Проект зубнадзор</a></li>
-                    <li><a href="">Не могу молчать!</a></li>
+                    <li><a href="/o-proekte/">Проект зубнадзор</a></li>
+                    <li><a href="/ne-mogu-molchat/">Не могу молчать!</a></li>
                     <li><a href="">Ваша помощь</a></li>
-                    <li><a href="">Миссия</a></li>
+                    <li><a href="#mission">Миссия</a></li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
                     <li><a href="">Документы</a></li>
-                    <li><a href="">Инфоблог</a></li>
-                    <li><a href="">Услуги</a></li>
+                    <li><a href="/infoblog/">Инфоблог</a></li>
+                    <li><a href="/uslugi/">Услуги</a></li>
                     <li><a href="">Обратная связь</a></li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">Сотрудничестов</a></li>
+                    <li><a href="/kontakty/">Контакты</a></li>
+                    <li><a href="/sotrudnichestvo/">Сотрудничестов</a></li>
                     <li><a href="">Политика конфиденциальности</a></li>
                     <li><a href="">Условия обработки персональных данных</a></li>
                 </ul>

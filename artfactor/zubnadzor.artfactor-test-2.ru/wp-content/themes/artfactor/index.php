@@ -7,14 +7,18 @@ Template Name: Index page
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
     <section class="main-banner fullwidth-container fullwidth-container_blue">
-        <div class="container container_grid main-banner-container__center" style="height:510px;  grid-template-columns: unset;">
+        <div class="container container_grid main-banner-container__center">
             <div class="main-banner_wrapper container_flex">
                 <div class="main-banner__text">
                     Практическая помощь
                     пострадавшим от некачественного
                     стоматологического лечения
                 </div>
-                <div class="main-banner__img">
+                <div class="main-banner__img" style="
+                background-image: url('<?= get_field('banner_760px'); ?>');
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 370px;">
                     <img src="<?= get_template_directory_uri() . '/images/main_banner.png' ?>">
                 </div>
             </div>
@@ -31,7 +35,7 @@ Template Name: Index page
             <span class="about-us__text">Центр координации и поддержки
                 стоматологических пациентов </span>
         </div>
-        <div class="about-us__content">
+        <div class="about-us__content container">
             <div class="about-us__text">
                 АНО «Зубнадзор» действует на основании утвержденного Устава и оказывает информационные и консультационные услуги в сфере стоматологии, консультации по вопросам порядка получения стоматологических услуг, консультации правового характера, консультации пациентам стоматологических клиник/учреждений по вопросам возможного порядка их действий в случае некачественного оказания им стоматологических услуг.
                 <p></p> Целью создания организации является оказание помощи пациентам и в случае, если они пострадали от незаконных действий медицинских стоматологических организаций (клиник, учреждений, отдельных специалистов), содействие в защите их прав; оказание помощи при разрешении конфликтных ситуаций пациентов с медицинскими клиниками.
@@ -75,7 +79,7 @@ Template Name: Index page
             <div class="mission__text">Центр координации и поддержки
                 стоматологических пациентов </div>
         </div>
-        <div class="mission__content">
+        <div class="mission__content container">
             <div class="mission__text">
                 <p>Для достижения уставных целей по предоставлению услуг в сфере координации и поддержки стоматологических пациентов АНО «Зубнадзор» определяет свою миссию в участии в информационной деятельности в электронных изданиях и средствах массовой информации, в печатных изданиях и средствах массовой информации, в информационных сетях в установленном законодательством Российской Федерации порядке.</p>
 

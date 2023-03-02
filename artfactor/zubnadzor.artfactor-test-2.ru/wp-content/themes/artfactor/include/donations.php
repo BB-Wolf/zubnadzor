@@ -27,12 +27,13 @@
         <img style="max-width:unset;" src=" <?= get_template_directory_uri() ?>/images/payqr.jpg" />
       </div>
     </div>
-    <div>
-      <span class="page__h2"> Реквизиты счёта АНО «Зубнадзор»:</span>
-      <p></p>
-      р/с 40703810538000021256 ПАО Сбербанк<br />
-      БИК 044525225
-      <br /> к/с 301018100400000000225
+    <div style="display:grid;gap:10px; margin-top:50px;">
+      <div class="page__h2" style="margin-bottom:20px;"> Реквизиты счёта АНО «Зубнадзор»:</div>
+
+      <div>р/с 40703810538000021256</div>
+      <div>ПАО Сбербанк</div>
+      <div>БИК 044525225</div>
+      <div> к/с 301018100400000000225</div>
+      </>
     </div>
   </div>
-</div>

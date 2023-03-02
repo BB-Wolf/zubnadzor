@@ -8,7 +8,6 @@ Template Name: Youtube page
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
     <div>
-        <div class="breadcrumbs"></div>
         <div class="banner" data-aos="fade-in" data-aos-duration="400" data-aos-easing="ease-in-sine">
             <?php if (has_post_thumbnail($post->ID)) : ?>
                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
@@ -16,6 +15,9 @@ Template Name: Youtube page
                 <? echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />'; ?>
 
             <?php endif; ?>
+        </div>
+        <div class="container">
+            <div class="content breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
         </div>
     </div>
     <div class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">

@@ -1,14 +1,14 @@
 <?php
 /*
-Template Name: Сотрудничество
+Template Name: Контакты
 */
-?>
 
+?>
 
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
     <div>
-        <div class="banner" data-aos="fade-in" data-aos-duration="400" data-aos-easing="ease-in-sine">
+        <div class="content banner" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
             <?php if (has_post_thumbnail($post->ID)) : ?>
                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
                 <? echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />'; ?>
@@ -34,11 +34,12 @@ Template Name: Сотрудничество
                  "></div>
             <? endif; ?>
         </div>
-        <div class=" page__content"><?= the_content(); ?></div>
+        <div class="container page__content">
+            <? require_once(get_template_directory() . '/include/contacts.php'); ?>
+        </div>
+        <div class="container page__content"><?= the_content(); ?></div>
 
     </div>
-    <hr class="container">
-    <? require_once(get_template_directory() . '/include/partners.php'); ?>
 </main>
 <?
 get_footer();
