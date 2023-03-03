@@ -15,10 +15,10 @@ Template Name: Index page
                     стоматологического лечения
                 </div>
                 <div class="main-banner__img" style="
-                background-image: url('<?= get_field('banner_760px'); ?>');
-    background-repeat: no-repeat;
-    background-position: right;
-    min-height: 370px;">
+                            background-image: url('<?= get_field('banner_760px'); ?>');
+                background-repeat: no-repeat;
+                background-position: right;
+                min-height: 370px;">
                     <img src="<?= get_template_directory_uri() . '/images/main_banner.png' ?>">
                 </div>
             </div>

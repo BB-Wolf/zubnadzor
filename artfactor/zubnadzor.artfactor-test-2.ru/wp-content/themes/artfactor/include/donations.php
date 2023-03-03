@@ -11,7 +11,7 @@
       Поддержите Центр «Зубнадзор», переведя любую сумму пожертвования. В
       основании платежа укажите: "Взнос на уставные цели" <p>
         Внести пожертвование можно по QR коду или переводом на расчётный счёт. </div>
-    <div style="    display: flex;
+    <div class="donate" style="    display: flex;
     justify-content: center;
     align-items: center;">
       <div>

@@ -6,7 +6,7 @@ Template Name: Youtube page
 ?>
 
 <? get_header(); ?>
-<main class="main main--page" data-barba="container">
+<main id="cantstop" class="main main--page" data-barba="container">
     <div>
         <div class="banner" data-aos="fade-in" data-aos-duration="400" data-aos-easing="ease-in-sine">
             <?php if (has_post_thumbnail($post->ID)) : ?>

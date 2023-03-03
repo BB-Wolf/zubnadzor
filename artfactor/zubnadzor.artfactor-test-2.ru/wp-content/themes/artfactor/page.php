@@ -24,7 +24,7 @@ Template Name: Page page
             <? if (get_field('banner_left_image')) : ?>
                 <? $banner  = get_field('banner_left_image');
                 ?>
-                <div class="page__leftimg" style="margin-top:60px;background:url('<?= $banner['sizes']['medium_large'] ?>');
+                <div class="page__leftimg <? if (strpos($_SERVER['REQUEST_URI'], 'rukovodstvo') !== FALSE) : ?> rukovodstvo pb_16 <? endif; ?>" style="margin-top:60px;background:url('<?= $banner['sizes']['medium_large'] ?>');
                  width:<?= $banner['sizes']['medium_large-width']; ?>px;
                  height:<?= $banner['sizes']['medium_large-height']; ?>px;
                  max-width:400px;

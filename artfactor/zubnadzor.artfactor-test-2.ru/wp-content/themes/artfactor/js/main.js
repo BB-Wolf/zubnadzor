@@ -21,3 +21,14 @@ function toggleSearch() {
     x.classList.add(".search__field_active");
   }
 }
+
+function subMenuToggle(e) {
+  alert("1");
+}
+
+var elements = document.getElementsByTagName("a");
+
+console.log(elements);
+for (var i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("onclick", subMenuToggle(), true);
+}

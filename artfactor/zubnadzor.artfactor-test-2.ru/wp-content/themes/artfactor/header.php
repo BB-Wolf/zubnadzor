@@ -86,14 +86,11 @@
                     'container'       => '',
                     'menu_class'      => 'm-menu list-reset',
                     'menu_id'         => '',
-                    'after'           => '<span class="menu-arrow"><svg width="11" height="7" viewBox="0 0 11 7" fill="none">
-          <path d="M1.63477 1L5.63477 5L9.63477 1" stroke="white" stroke-width="2"/>
-          </svg></span>',
+                    'after'           => '',
                     'echo'            => true,
                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     'depth'           => 0,
                     'walker'          => '',
-                    'after' => '',
                 )); ?>
             </nav>
         </div>
