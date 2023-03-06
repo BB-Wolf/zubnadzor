@@ -657,6 +657,14 @@ color: #474858;
         background-position: center;
     background-size: contain;
   }
+
+
+footer{
+  background-image:url('/wp-content/themes/artfactor/images/mobile_footer.png');
+  background-size: contain;
+  background-position: center bottom;
+}
+
   .footer__wrapper{
     flex-direction: column;
   }

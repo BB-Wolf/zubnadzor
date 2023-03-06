@@ -27,7 +27,7 @@ function subMenuToggle(e) {
 }
 
 $(function () {
-  $(document).on("click", ".__withsub", function (e) {
+  $(document).on("click", ".m-menu > .__withsub", function (e) {
     e.preventDefault();
     if (!$(this).hasClass("active")) {
       $(this).css("height", $(this).find(".sub-menu").height() + 50 + "px");
