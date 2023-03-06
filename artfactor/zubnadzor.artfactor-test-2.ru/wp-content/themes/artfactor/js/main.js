@@ -26,9 +26,17 @@ function subMenuToggle(e) {
   alert("1");
 }
 
-var elements = document.getElementsByTagName("a");
-
-console.log(elements);
-for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener("onclick", subMenuToggle(), true);
-}
+$(function () {
+  $(document).on("click", ".__withsub", function (e) {
+    e.preventDefault();
+    if (!$(this).hasClass("active")) {
+      $(this).css("height", $(this).find(".sub-menu").height() + 50 + "px");
+      $(this).find(".sub-menu").show();
+      $(this).addClass("active");
+    } else {
+      $(this).css("height", "unset");
+      $(this).find(".sub-menu").hide();
+      $(this).removeClass("active");
+    }
+  });
+});

@@ -6,7 +6,7 @@ Template Name: Index page
 
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
-    <section class="main-banner fullwidth-container fullwidth-container_blue">
+    <section class="main-banner  fullwidth-container_blue" style="overflow:hidden;      ">
         <div class="container container_grid main-banner-container__center">
             <div class="main-banner_wrapper container_flex">
                 <div class="main-banner__text">
@@ -23,7 +23,7 @@ Template Name: Index page
                 </div>
             </div>
         </div>
-        <div class="main-banner__flowtext-container fullwidth-container">
+        <div class="main-banner__flowtext-container  ">
             <div class="main-banner__flowtext">
                 Приглашаем к сотрудничеству независимых медицинских экспертов и квалифицированных юристов.Мониторим качество. Формируем мнение. Находим решения.
             </div>

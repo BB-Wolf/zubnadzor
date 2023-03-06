@@ -14,12 +14,12 @@ Template Name: Page page
                 <? echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />'; ?>
             <?php endif; ?>
         </div>
-        <div class="container">
-            <div class="content breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
+        <div class="container content">
+            <div class=" breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
         </div>
     </div>
-    <div class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <div>
+    <div id="<? if (strpos($_SERVER['REQUEST_URI'], 'rukovodstvo') !== FALSE) : ?>rukovodstvo<? endif; ?>" class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="left__column">
             <div class="page__title"><?= get_the_title(); ?></div>
             <? if (get_field('banner_left_image')) : ?>
                 <? $banner  = get_field('banner_left_image');
@@ -32,9 +32,10 @@ Template Name: Page page
                  background-size:contain;
                  background-repeat:no-repeat;
                  "></div>
+                <? echo get_field('left_banner_text'); ?>
             <? endif; ?>
         </div>
-        <div class="container page__content"><?= the_content(); ?></div>
+        <div class="page__content"><?= the_content(); ?></div>
 
     </div>
 </main>

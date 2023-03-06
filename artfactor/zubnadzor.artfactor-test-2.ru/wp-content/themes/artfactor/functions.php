@@ -25,6 +25,7 @@ add_action('wp_enqueue_scripts', 'addJs');
 function addJs()
 {
     wp_enqueue_script('aos.js', get_template_directory_uri() . '/js/aos.js');
+    wp_enqueue_script('jquery.js', get_template_directory_uri() . '/js/jquery.min.js');
     wp_enqueue_script('main.js', get_template_directory_uri() . '/js/main.js');
 }
 

@@ -47,7 +47,7 @@
                 <div class="footer__links">
                     <ul>
                         <li><a href="/kontakty/">Контакты</a></li>
-                        <li><a href="/sotrudnichestvo/">Сотрудничестов</a></li>
+                        <li><a href="/sotrudnichestvo/">Сотрудничество</a></li>
                         <li><a href="">Политика конфиденциальности</a></li>
                         <li><a href="">Условия обработки персональных данных</a></li>
                     </ul>

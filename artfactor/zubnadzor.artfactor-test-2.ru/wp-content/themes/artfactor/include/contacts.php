@@ -2,7 +2,7 @@
     <div class="contacts__address">
         <div class="page__h2" style="padding-left:9px;">г. Москва</div>
         <ul>
-            <li class="icon__pin">ул. Кржижановского, д. 21 А</li>
+            <li class="icon__pin font_bold">ул. Кржижановского, д. 21 А</li>
             <li class="icon__phone"><a href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
             <li class="icon__email"> <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a></li>
         </ul>

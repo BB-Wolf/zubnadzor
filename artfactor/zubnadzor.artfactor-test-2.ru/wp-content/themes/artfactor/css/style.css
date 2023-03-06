@@ -21,13 +21,11 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Montserat', sans-serif;
   color: #434A4A;
   font-size: 18px;
   line-height: 160%;
   font-weight: normal;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -225,15 +223,32 @@ a {
   display: none;
 }
 
-
-
-
 .nav-menu {
  height:50px;
  display: flex;
  justify-content: space-around;
  align-items: center;
 }
+
+.__withsub > a{
+background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 20px center !important;
+}
+
+.__withsub:after {
+/*color: #A6A7BD;
+    content: ' ▾';
+    position: absolute;
+    right: 1%;
+    width: 30px;
+    height: 40px;
+    object-fit: contain;
+    display: inline-block;
+    font-size: 20px;
+    top:11px;*/
+}
+
 
 .list-reset,
 .sub-menu {
@@ -255,25 +270,23 @@ a {
   background-color: #fff;
   position: absolute;
   top: 50px;
-  left: -10px;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
-  width:100%;
+  left: 10px;
+  text-align: left;
 }
 
 .sub-menu li {
   border-right: 0 !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 5%);
   width: 100%;
- 
-
+ white-space: break-spaces;
 }
 
 .sub-menu li a {
   padding:0;
-  border-bottom: 2px solid transparent !important;
   color:#434A4A !important;
-  
+      text-align: left;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .sub-menu li a:hover {
@@ -286,6 +299,8 @@ a {
 .menu__separator {
   color: #44606B !important;
 }
+
+
 
 .sub-menu  .menu__separator{
   display: none;
@@ -473,12 +488,23 @@ a {
   gap: 10px;
   list-style: none;
   padding: 0;
+  min-width:400px;
 }
 
 
 
 .contacts__address>li,
 .contacts__address li a {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #474858;
+}
+
+.font_bold{
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 600;
@@ -508,7 +534,7 @@ a {
 .main-banner__img {
   width: 500px;
   z-index: 4;
-  padding-left: 66px;
+  padding-left: 80px;
 }
 
 .main-banner__img img {
@@ -628,9 +654,8 @@ a {
     color: #FF3C00;
     display: inline-block;
     border-bottom: 2px solid #FF3C00;
-    margin: 2px auto;
+    margin: 0px auto;
     height:100%;
-    width: 100%;
 }
 
 
@@ -1051,6 +1076,11 @@ footer .company {
 
 }
 
+.page__documentslist ul{
+    padding-left:0px;
+  }
+
+
 .page__documentslist li {
 
   background: url('/wp-content/themes/artfactor/images/Blank_alt_light.svg') no-repeat left top;
@@ -1302,6 +1332,12 @@ color: #474858;
 text-decoration: underline;
 }
 
+.left__column{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .copyright{
 
@@ -1338,8 +1374,108 @@ color:#E1E2ED;
   padding-top:60px;
 }
 
+.pt_16{
+  padding-top:16px;
+}
+
+.pl-35{
+  padding-left:35px;
+}
+
 .pb_16{
   padding-bottom:16px;
 }
 
+.mb_60{
+  margin-bottom:60px;
+}
 
+
+.text-center{
+  text-align: center !important;
+}
+
+.contact__form{
+  
+  border:1px solid #1768C1;
+  padding:0px 80px 80px 80px;
+  margin-top:60px;
+  border-radius: 10px;
+}
+
+.form__group{
+  display: flex;
+  flex-direction: row;
+  gap:40px;
+  padding:10px;
+}
+
+
+.form__group label{
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.form__group input[type="text"]{
+
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:20px;
+  width:50%;
+  border:0;
+  border-bottom:1px solid #474858;
+  outline: none;
+}
+
+.form__group_mobile{
+  flex-direction: column;
+}
+
+.form__group textarea{
+  width:100%;
+  height:auto;
+  min-height:40px;
+  resize:none;
+  border:0;
+  border-bottom:1px solid #474858;
+  outline:none;
+  padding-top:20px;
+}
+
+
+.form__radio{
+  flex-direction: column;
+
+}
+
+.form__customer{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.form__checkbox{
+  width: 100%;
+}
+
+.license__agree{
+  width: 100%;
+}
+
+.license__agree label{
+  padding-left:5px;
+}
+
+button.modal-label{
+  outline:none;
+  background:unset;
+  border:0;
+}
+
+.error__text{
+  box-shadow: 0px 0px 1px 1px red;
+}
