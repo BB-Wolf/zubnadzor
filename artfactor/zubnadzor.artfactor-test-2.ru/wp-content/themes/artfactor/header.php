@@ -72,7 +72,6 @@
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 0,
                         'walker'          => '',
-                        'after' => '<div class="menu__separator">|</div>',
                     )); ?>
                 </nav>
             </div>

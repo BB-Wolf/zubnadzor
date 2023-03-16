@@ -25,7 +25,7 @@ Template Name: Index page
         </div>
         <div class="main-banner__flowtext-container  ">
             <div class="main-banner__flowtext">
-                Приглашаем к сотрудничеству независимых медицинских экспертов и квалифицированных юристов.Мониторим качество. Формируем мнение. Находим решения.
+                Приглашаем к сотрудничеству независимых медицинских экспертов и квалифицированных юристов. Мониторим качество. Формируем мнение. Находим решения.
             </div>
         </div>
     </section>
@@ -46,26 +46,26 @@ Template Name: Index page
     <section class="container directions" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="directions__title">Направления деятельности</div>
         <div class="directions__panes">
-            <a href="#" class="directions__pane" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+            <a href="/uslugi/" class="directions__pane" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/file.svg' ?>" alt="Регистрация и мониторинг жалоб и обращений" title="Регистрация и мониторинг жалоб и обращений">
                 </div>
                 <div class="directions__text">Регистрация и мониторинг жалоб и обращений</div>
             </a>
-            <a class="directions__pane" data-aos="zoom-in-up" data-aos-duration="600" data-aos-easing="ease-in-sine">
+            <a href="/uslugi/" class=" directions__pane" data-aos="zoom-in-up" data-aos-duration="600" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/edit.svg' ?>" alt="Подготовка и составление документов" title="Подготовка и составление документов">
                 </div>
                 <div class="directions__text">Подготовка и составление документов</div>
             </a>
-            <a class="directions__pane" data-aos="zoom-in-down" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <a href="/uslugi/" class="directions__pane" data-aos="zoom-in-down" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/cross.svg' ?>" alt="Подготовка и составление документов" title="Помощь в выборе стоматологических клиник">
 
                 </div>
                 <div class="directions__text">Помощь в выборе стоматологических клиник</div>
             </a>
-            <a class="directions__pane" data-aos="zoom-in-down" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <a href="/uslugi/" class="directions__pane" data-aos="zoom-in-down" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <div class="directions__icon">
                     <img src="<?= get_template_directory_uri() . '/images/Shield.svg' ?>" alt="Подготовка и составление документов" title="Взаимодействие с организациями в интересах пациентов">
                 </div>

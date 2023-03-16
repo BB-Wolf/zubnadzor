@@ -1,5 +1,14 @@
 /*** 768 **/
+
+
 @media screen and (max-width:768px) {
+
+
+.banner{
+  height:80px;
+  background-size: cover;
+  min-height: 80px;
+}
 
   .header__bottom {
     margin-top: 21px;
@@ -47,6 +56,10 @@
     padding: 0;
   }
 
+  
+.header__mail a::before {
+  top:0px;
+}
 
   .header__text_muted {
     font-family: Montserrat;
@@ -94,7 +107,9 @@
     padding: 3px 8px 95px 0px;
   }
 
+
   .footer-content {
+    margin:10px 0px 0px 10px !important;
     padding: 0 !important;
   }
 
@@ -151,14 +166,25 @@ color: #474858;
   .blockquote{
     padding: 100px !important;
     width:100% !important;
+    background-position: 40px 100px;
   }
 
+  .redquotes{
+    padding-left:50px;
+  }
+  .redquotes::before{
+    margin-left:-50px;
+  }
+
+  
 
   .about-us__title,
   .about-us__text,
   .mission__title,
-  .mission__text {
-    padding-top: 30px;
+  .mission__text,
+  .page__title {
+    padding-top: 0px;
+    margin-top:60px;
     padding-bottom: 30px;
   }
 
@@ -251,7 +277,7 @@ color: #474858;
     max-width: 100%;
     padding-left:0px;
     padding-right:0px;
-        margin: 60px 0px 0px 10px;
+        margin: 0px 0px 0px 10px;
   }
 
   .container_flex {
@@ -392,6 +418,7 @@ color: #474858;
 
   .page__title{
     align-self: flex-start;
+    padding-bottom:0px;
   }
 
   .footer__wrapper {
@@ -442,6 +469,23 @@ color: #474858;
   }
 
 
+.form__group_mobile{
+  flex-direction: column;
+}
+
+.ml_25{
+  margin-left:25px;
+}
+
+
+.donate{
+    grid-template-columns: 70% 30%;
+}
+
+.qrcode{
+  padding-left:0px;
+}
+
 }
 
 
@@ -459,12 +503,15 @@ color: #474858;
 
 
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px) and (max-width:1500px) {
 
   .main-banner__img {
     background-image: unset !important;
   }
-
+  .banner{
+    min-height:156px;
+    background-size: contain;
+  }
 }
 
 
@@ -504,6 +551,25 @@ color: #474858;
     content: '';
   
 }
+
+.about-us,.mission{
+  gap:0;
+}
+
+  .about-us__h1,
+  .mission__h1
+{    padding-top: 0px;
+    padding-bottom: 20px;
+ }
+
+
+  .about-us__text,
+  .mission__text {
+    font-size:18px;
+    padding-top: 0px;
+    padding-bottom:0px;
+  }
+
 
 
   .directions__panes {
@@ -591,6 +657,18 @@ color: #474858;
 
 
   
+.form__group_mobile{
+  flex-direction: column;
+}
+
+#rukovodstvo .page__content{
+  padding-left:0;
+}
+
+#rukovodstvo .ml_25{
+  margin-left:15px;
+}
+
   .page__content{
     padding-left: 10px;
     padding-right:10px;
@@ -598,15 +676,25 @@ color: #474858;
     width:99%;
   }
 
+    #contacts {
+      margin-left:0 !important;
+      padding-left:0 !important;
+    }
+
   .blockquote{
     padding: 65px !important;
 
   }
   .blockquote,.redquotes{
     text-indent: 50px;
-        background-position: 10px 100px;
+    background-position: 10px 100px;
+  
   }
 
+
+  .redquotes{
+    padding-left:25px;
+  }
   .redquotes::before{
     margin-left:0;
   }
@@ -614,7 +702,11 @@ color: #474858;
   
   
   .donate{
-    flex-direction: column;
+    grid-template-columns: 100%;
+  }
+
+  .donate__text{
+    font-size:13px;
   }
 
   .left__column{
@@ -683,7 +775,7 @@ footer{
 }
 
 .contact__form{
-  width:55%;
+  width:60%;
   padding:7px;
 }
 .form__group{
@@ -695,6 +787,20 @@ margin-left:0px;
 .form__group input[type="text"]{
   width:100%;
   padding-left:0;
+}
+
+.qrcode{
+  padding-left:0px;
+      height:unset;
+}
+
+
+.banner{
+  height:40px;
+}
+
+.container_grid{
+  gap:30px;
 }
 
 }

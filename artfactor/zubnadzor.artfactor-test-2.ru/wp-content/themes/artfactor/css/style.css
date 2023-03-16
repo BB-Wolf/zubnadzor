@@ -77,6 +77,11 @@ a {
       display: flex;
 }
 
+.header__logo{
+  padding-top:7px;
+  margin-bottom: -7px;
+}
+
 .header__address {
   display: flex;
   align-items: flex-start;
@@ -88,7 +93,7 @@ a {
 .header__address ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: relative;
   list-style: none;
   gap:21px;
@@ -105,6 +110,7 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  width: 100%;
 
 }
 
@@ -163,6 +169,7 @@ a {
     display: block;
     position: absolute;
     left: 0px;
+    top:7px;
 }
 
 .header__phone::before {
@@ -297,13 +304,17 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
 
 
 .menu__separator {
-  color: #44606B !important;
+  color: #A6A7BD !important;
 }
 
 
 
 .sub-menu  .menu__separator{
   display: none;
+}
+
+.sub-menu li a:after {
+     content: '' !important;
 }
 
 .search {
@@ -384,7 +395,6 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
 /*** END HEADER SECTION ********************************/
 
 .container {
-  width:100%;
   max-width: 1500px;
   padding: 0 30px;
   margin: 0 auto;
@@ -457,27 +467,27 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
 }
 
 .icon__phone {
-  background: url('/wp-content/themes/artfactor/images/ic_baseline-phone.svg') no-repeat 2% center;
+  background: url('/wp-content/themes/artfactor/images/phone_black.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 57px !important;
+  padding: 13px 2px 0px 57px !important;
 }
 
 .icon__pin {
   background: url('/wp-content/themes/artfactor/images/pin-grey.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 37px !important;
+  padding: 13px 2px 0px 37px !important;
 }
 
 .icon__email {
-  background: url('/wp-content/themes/artfactor/images/ri_mail-line.svg') no-repeat 2% center;
+  background: url('/wp-content/themes/artfactor/images/mail_black.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 57px !important;
+  padding: 13px 2px 0px 57px !important;
 }
 
 .icon__search {
   background: url('/wp-content/themes/artfactor/images/search.svg') no-repeat 2% center;
   list-style: none;
-  padding: 13px 2px 15px 57px !important;
+  padding: 1px 2px 15px 57px !important;
 }
 
 .contacts__address ul {
@@ -512,6 +522,10 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
   letter-spacing: 0em;
   text-align: left;
   color: #474858;
+}
+
+.main{
+  margin-bottom: 120px;
 }
 
 .main-banner {
@@ -578,7 +592,7 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
   transform: translateX(-470px);
   position: relative;
   display: block;
-  top: -54px;
+  top: -46px;
 }
 
 .main-banner__flowtext {
@@ -605,7 +619,7 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
     justify-content: space-evenly;
     list-style: none;
     align-items: center;
-    gap: 20px;
+
     width: 100%;
 }
 
@@ -637,7 +651,7 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
     color: #474858;
     background: transparent;
     transition: all 0.3s;
-    padding-left: 16px;
+    padding-left: 35px;
     padding-right: 35px;
     margin: 0 auto;
     border-bottom: 2px solid transparent;
@@ -656,8 +670,20 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
     border-bottom: 2px solid #FF3C00;
     margin: 0px auto;
     height:100%;
+    width: 100%;
 }
 
+.menu li{
+  position: relative;
+}
+.menu li a:after{
+  content:'|';
+  display: inline-block;
+  position: absolute;
+  right:-2px;
+  padding-left:2px;
+  color:#A6A7BD;
+}
 
 .menu li.current-menu-item a{
  color: #FF3C00;
@@ -676,10 +702,22 @@ footer {
   background-position: 150% 0;
   background-repeat: no-repeat;
   background-size: contain;
+
+}
+
+footer  hr{
+  width:100%;
+}
+
+
+.footer{
+  width:100%;
+  max-width: 1500px;
+  margin:0 auto;
 }
 
 .footer-content {
-  padding: 40px;
+  padding: 0px 40px 0px 40px;
 }
 
 .footer-content ul {
@@ -712,15 +750,20 @@ footer {
 
 .footer__wrapper{
   justify-content: space-evenly;
-    display: flex;margin-left: 0;
-    padding-left: 155px;
+    display: flex;
+    margin-left: 0;
     flex-direction: row;
     align-items:baseline;
     gap: 10px;
+    padding-left:0px;
 }
 
 .footer__half{
   width: 58%;
+}
+
+.footer__full{
+  width:100%;
 }
 
 .footer__menu{
@@ -741,8 +784,9 @@ footer {
 
 .footer__madeby{
    flex-wrap: wrap;
-   gap:40px;
-   padding-left:0px;
+    gap: 20px;
+    padding-bottom: 20px;
+       padding-left:60px;
 }
 
 .footer__pin::before {
@@ -751,10 +795,10 @@ footer {
   background-image: url(/wp-content/themes/artfactor/images/ic_baseline-pin.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   position: absolute;
-  left: -30px;
+  left: -20px;
   display: inherit;
   top: 22px;
 }
@@ -765,8 +809,8 @@ footer {
   background-image: url(/wp-content/themes/artfactor/images/phone_white.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   left: -20px;
   display: inherit;
@@ -779,8 +823,8 @@ footer {
   background-image: url(/wp-content/themes/artfactor/images/email_white.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   left: -20px;
   display: inherit;
@@ -835,6 +879,28 @@ footer {
   width:100%;
   height:100%;
   object-fit: contain;
+  border-radius: 50%;
+}
+
+
+.chief__name{
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.chief__position{
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+padding-top:10px;
+
 }
 
 .directions {
@@ -935,22 +1001,25 @@ footer {
 
 footer .company {
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
   width: 100%;
-  margin-bottom: 40px;
   padding-left: 10px;
+  padding-top: 40px;
 }
 
 .footer__info {
   display: grid;
-     grid-template-columns: 2fr 2fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.footer__links ul{
+  width: 100%;
+}
 
 .footer__links li a {
   color: #fff;
@@ -975,7 +1044,6 @@ footer .company {
 
 .page {
   padding-left: 73px;
-  min-height: 536px;
   grid-template-columns: 1fr 2fr;
   align-items: unset;
   margin-top: 100px;
@@ -1128,6 +1196,7 @@ footer .company {
 
 .kama_breadcrumbs {
   padding-left: 22px;
+  margin-top:16px;
 }
 
 .kama_breadcrumbs span a span {
@@ -1176,6 +1245,8 @@ footer .company {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+      vertical-align: middle;
+  
 }
 
 .table__row .table__cell:last-child {
@@ -1187,13 +1258,14 @@ footer .company {
   text-align: left;
   width: auto;
   min-width: 130px;
+      vertical-align: middle;
 }
 
 .blockquote {
   background-image: url('/wp-content/themes/artfactor/images/quote.svg');
   background-color: #7AAFFF;
   background-repeat: no-repeat;
-  padding: 100px;
+  padding: 50px 100px 50px 100px;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1204,7 +1276,7 @@ footer .company {
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  background-position: 60px 100px;
+  background-position: 40px 51px;
   border-radius: 10px;
 }
 
@@ -1217,20 +1289,25 @@ footer .company {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  margin-left: -30px;
+  margin-left: -50px;
+  margin-top: 5px;
 }
 
 
-input[type="checkbox"]:checked~.modal-background {
-  display: block;
-}
-
-input[type="checkbox"]:checked~.modal {
-  display: block;
-}
-
-#modal {
+#modal,.modal-footer {
   display: none;
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+     width: 100%;
+    height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+  padding: 0px 40px 40px 40px;
 }
 
 .modal-background {
@@ -1240,7 +1317,6 @@ input[type="checkbox"]:checked~.modal {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   z-index: 9998;
 }
 
@@ -1251,26 +1327,47 @@ input[type="checkbox"]:checked~.modal {
   right: 0;
   bottom: 0;
   margin: auto;
-  display: none;
-  width: 500px;
-  height: 500px;
+     width: 946px;
+    height: 600px;
   background-color: #fff;
   box-sizing: border-box;
   z-index: 9999;
-  padding: 0px 40px 40px 40px;
+  
 }
 
 
 
 
-/* below is optional, it is just an example for the blue button */
+
+.send-button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 40px 15px 40px;
+  color: #fff;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 16px;  
+  background-color: #FF3C00 !important;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out, filter 0.2s ease-in;
+}
+
+.send-button:hover{
+    background-color: #D73300 !important;
+}
+
 .modal-label {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
-  padding: 10px 40px 10px 53px;
-  color: #474858;
-  box-shadow: 0px 0px 1px 1px #474858;
+  padding: 20px 50px 20px 73px;
+  color: #fff;
+  background-color: #FF3C00;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
@@ -1278,7 +1375,9 @@ input[type="checkbox"]:checked~.modal {
   letter-spacing: 0em;
   text-align: left;
   cursor: pointer;
-  transition: color 0.2s ease-in-out, box-shadow 0.4s ease-in-out, filter 0.2s ease-in;
+  border-radius: 10px;
+  transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out, filter 0.2s ease-in;
+
 }
 
 .modal-label::before {
@@ -1288,19 +1387,19 @@ input[type="checkbox"]:checked~.modal {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 27px;
-  top: 6px;
+  left: 47px;
+  top: 16px;
+  filter: invert(1) sepia(1) saturate(0);
 }
 
 .modal-label:hover::before {
   transition: filter 0.2s ease-in;
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(337deg);
+ filter: invert(1) sepia(1) saturate(0);
 }
 
 .modal-label:hover {
-  box-shadow: 0px 0px 1px 1px #FF3C00;
   transition: color 0.4s ease-in-out, box-shadow 0.2s ease-in-out;
-
+  background-color: #D73300;
 }
 
 
@@ -1310,6 +1409,8 @@ input[type="checkbox"]:checked~.modal {
   padding-bottom: 56.25%;
   background-image: url('/wp-content/themes/artfactor/images/video.jpg');
   background-repeat: no-repeat;
+  background-size: 106% 100%;
+  background-position: center center;
   height: 0;
 }
 
@@ -1378,6 +1479,9 @@ color:#E1E2ED;
   padding-top:16px;
 }
 
+.pl-50{
+  padding-left: 50px;
+}
 .pl-35{
   padding-left:35px;
 }
@@ -1390,7 +1494,6 @@ color:#E1E2ED;
   margin-bottom:60px;
 }
 
-
 .text-center{
   text-align: center !important;
 }
@@ -1400,6 +1503,7 @@ color:#E1E2ED;
   border:1px solid #1768C1;
   padding:0px 80px 80px 80px;
   margin-top:60px;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -1408,6 +1512,13 @@ color:#E1E2ED;
   flex-direction: row;
   gap:40px;
   padding:10px;
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 
@@ -1431,9 +1542,25 @@ text-align: left;
   outline: none;
 }
 
-.form__group_mobile{
-  flex-direction: column;
+.form__group textarea::placeholder{
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
 }
+
+.form__group input[type="text"]::placeholder {
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+}
+
 
 .form__group textarea{
   width:100%;
@@ -1468,9 +1595,16 @@ text-align: left;
 
 .license__agree label{
   padding-left:5px;
+  font-family: Montserrat;
+font-size: 13px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
-button.modal-label{
+button.send-button{
   outline:none;
   background:unset;
   border:0;
@@ -1478,4 +1612,77 @@ button.modal-label{
 
 .error__text{
   box-shadow: 0px 0px 1px 1px red;
+}
+
+
+.button__close{
+      position: absolute;
+    right: 20px;
+    top: 10px;
+    color:#8A9096;
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.donate{
+display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.banner{
+width: 100%;
+background-color:#9ECCFF;
+min-height:200px;
+background-position: center center;
+
+}
+
+.banner img{
+  object-fit: cover;
+}
+
+
+.qrcode{
+  max-width:unset; height:320px; padding-left:67px;
+}
+
+
+.error::placeholder{
+  color:red;
+}
+
+
+@keyframes horizontal-shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
+}
+
+.scrollToTop{
+  width:40px;
+  height:40px;
+  position: fixed;
+  bottom:20%;
+  right:44px;
+  border:2px solid #8FC4FF;
+  border-radius: 5px;
+  display: none;
+  background-image: url('/wp-content/themes/artfactor/images/up_arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+ z-index: 1000;
+}
+
+@keyframes arrow-up {
+  0% { background-position: center 100%;}
+  25% { background-position: center 0%;}
+  50% { background-position: center 50%;}
+  100% { background-position: center 100%;}
 }

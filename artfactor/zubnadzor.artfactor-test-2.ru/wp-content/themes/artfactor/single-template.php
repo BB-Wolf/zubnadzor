@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Сотрудничество
+Template Name: Single Template
 */
 ?>
 

@@ -7,12 +7,9 @@ Template Name: Контакты
 
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
-    <div>
-        <div class="content banner" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
-            <?php if (has_post_thumbnail($post->ID)) : ?>
-                <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-                <? echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />'; ?>
-            <?php endif; ?>
+    <div style="position:relative;">
+        <div class="content banner" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine" <?php if (has_post_thumbnail($post->ID)) : ?> <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?> <? // echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />';        
+                                                                                                                                                                                                                                                                        ?> style="background-image:url(<?= $image[0] ?>);" <? ?> <?php endif; ?>>
         </div>
         <div class="container">
             <div class="content breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
@@ -34,13 +31,13 @@ Template Name: Контакты
                  "></div>
             <? endif; ?>
         </div>
-        <div class="container page__content">
+        <div id="contacts" class="container page__content">
             <? require_once(get_template_directory() . '/include/contacts.php'); ?>
             <div class="container page__content">
                 <?= the_content(); ?>
 
                 <div class="contact__form">
-                    <div class="page__h2 page__h2_blue pt_60 pb_16">Заполните форму, и мы с Вами свяжемся!</div>
+                    <div class="page__h1 page__h2_blue pt_60 pb_16">Заполните форму, и мы с Вами свяжемся!</div>
                     <form>
                         <div class="form__group">
                             <input type="text" placeholder="Имя" name="username">
@@ -69,7 +66,7 @@ Template Name: Контакты
                             </div>
                             <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на обработку персональных данных
                                     и с политикой конфиденциальности.</label></div>
-                            <div><button class="modal-label">Отправить</button></div>
+                            <div><button class="send-button">Отправить</button></div>
                         </div>
                     </form>
                 </div>
