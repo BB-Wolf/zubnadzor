@@ -7,6 +7,6 @@
             <li class="icon__email"> <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a></li>
         </ul>
     </div>
-    <div class="yandexmap"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4b2f313e95817cb1d7205310b21650df8eba6dab9360ecda2c3abc214f9f640&amp;source=constructor" width="593" height="250" frameborder="0"></iframe></div>
+    <div class="yandexmap"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4b2f313e95817cb1d7205310b21650df8eba6dab9360ecda2c3abc214f9f640&amp;source=constructor" width="100%" height="250" frameborder="0"></iframe></div>
 </div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=503a6e22-d17f-4e25-b055-14877ea16f44" type="text/javascript"></script>

@@ -7,7 +7,7 @@ Template Name: Index page
 <? get_header(); ?>
 <main class="main main--page" data-barba="container">
     <section class="main-banner  fullwidth-container_blue" style="overflow:hidden;      ">
-        <div class="container container_grid main-banner-container__center">
+        <div class="main-banner-container__center container container_grid">
             <div class="main-banner_wrapper container_flex">
                 <div class="main-banner__text">
                     Практическая помощь
@@ -35,7 +35,7 @@ Template Name: Index page
             <span class="about-us__text about-us__text_big">Центр координации и поддержки
                 стоматологических пациентов </span>
         </div>
-        <div class="about-us__content container">
+        <div class="about-us__content">
             <div class="about-us__text">
                 <b>АНО «Зубнадзор» </b> действует на основании утвержденного Устава и оказывает информационные и консультационные услуги в сфере стоматологии, консультации по вопросам порядка получения стоматологических услуг, консультации правового характера, консультации пациентам стоматологических клиник/учреждений по вопросам возможного порядка их действий в случае некачественного оказания им стоматологических услуг.
                 <p></p> Целью создания организации является оказание помощи пациентам и в случае, если они пострадали от незаконных действий медицинских стоматологических организаций (клиник, учреждений, отдельных специалистов), содействие в защите их прав; оказание помощи при разрешении конфликтных ситуаций пациентов с медицинскими клиниками.
@@ -79,7 +79,7 @@ Template Name: Index page
             <div class="mission__text about-us__text_big">Центр координации и поддержки
                 стоматологических пациентов </div>
         </div>
-        <div class="mission__content container">
+        <div class="mission__content">
             <div class="mission__text">
                 <p>Для достижения уставных целей по предоставлению услуг в сфере координации и поддержки стоматологических пациентов АНО «Зубнадзор» определяет свою миссию в участии в информационной деятельности в электронных изданиях и средствах массовой информации, в печатных изданиях и средствах массовой информации, в информационных сетях в установленном законодательством Российской Федерации порядке.</p>
                 <span class="page__h2 pt_30 pb_16">Собственный информационный ресурс</span>

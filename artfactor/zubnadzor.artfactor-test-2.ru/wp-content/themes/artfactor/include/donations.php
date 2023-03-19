@@ -1,12 +1,12 @@
 <?php
 ?>
 
-<div id="donations" class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
-  <div>
+<div id="donations" class="container container_flex page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+  <div class="left__column" style="width: 360px;">
     <div class="page__title">Ваша помощь</div>
     <div class="page__leftimg"></div>
   </div>
-  <div class="page__content container_grid" style="grid-template-columns: 90%; width: 100%; text-align: left; gap: 30px;margin-bottom:50px;">
+  <div class="page__content container_grid" style="grid-template-columns: 80%; text-align: left; gap: 30px;margin-bottom:50px;">
     <div>
       Поддержите Центр «Зубнадзор», переведя любую сумму пожертвования. В
       основании платежа укажите: "Взнос на уставные цели" <p>

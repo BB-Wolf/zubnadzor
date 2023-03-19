@@ -15,13 +15,13 @@ Template Name: About project
             <div class="content breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
         </div>
     </div>
-    <div class="container container_grid page" style="margin-bottom:100px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <div>
-            <div class="page__title"><?= get_the_title(); ?></div>
-            <? if (get_field('banner_left_image')) : ?>
-                <? $banner  = get_field('banner_left_image');
-                ?>
-                <div class="page__leftimg" style="margin-top:60px;background:url('<?= $banner['sizes']['medium_large'] ?>');
+    <div class="container container_flex page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="left__column">
+            <div class=" page__title"><?= get_the_title(); ?></div>
+        <? if (get_field('banner_left_image')) : ?>
+            <? $banner  = get_field('banner_left_image');
+            ?>
+            <div class="page__leftimg" style="margin-top:60px;background:url('<?= $banner['sizes']['medium_large'] ?>');
                  width:<?= $banner['sizes']['medium_large-width']; ?>px;
                  height:<?= $banner['sizes']['medium_large-height']; ?>px;
                  max-width:400px;
@@ -29,9 +29,9 @@ Template Name: About project
                  background-size:contain;
                  background-repeat:no-repeat;
                  "></div>
-            <? endif; ?>
-        </div>
-        <div class=" page__content"><?= the_content(); ?></div>
+        <? endif; ?>
+    </div>
+    <div class=" page__content"><?= the_content(); ?></div>
 
     </div>
     <hr class="container">

@@ -14,11 +14,11 @@ Template Name: Документы
             <div class="content breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
         </div>
     </div>
-    <div class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    <div class="container container_flex page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div>
             <div class="page__title"><?= get_the_title(); ?></div>
         </div>
-        <div class=" page__content"><?= the_content(); ?></div>
+        <div class=" page__content" style="margin-bottom:0px;"><?= the_content(); ?></div>
     </div>
 </main>
 <?

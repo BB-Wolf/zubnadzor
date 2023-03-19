@@ -15,7 +15,7 @@ Template Name: Page page
             <div class=" breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
         </div>
     </div>
-    <div id="<? if (strpos($_SERVER['REQUEST_URI'], 'rukovodstvo') !== FALSE) : ?>rukovodstvo<? endif; ?>" class="container container_grid page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    <div id="<? if (strpos($_SERVER['REQUEST_URI'], 'rukovodstvo') !== FALSE) : ?>rukovodstvo<? endif; ?>" class="container container_flex page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="left__column">
             <div class="page__title"><?= get_the_title(); ?></div>
             <? if (get_field('banner_left_image')) : ?>

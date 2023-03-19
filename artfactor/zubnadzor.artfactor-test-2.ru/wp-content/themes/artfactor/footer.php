@@ -1,11 +1,11 @@
 <footer>
     <div class="footer">
-        <div class="footer-content container">
+        <div class="footer-content">
             <div class="company">Автономная некоммерческая организация<br />
                 Центр координации и поддержки стоматологических пациентов «Зубнадзор»
             </div>
         </div>
-        <div class="container container_grid footer__wrapper">
+        <div class="container_grid footer__wrapper">
             <div class="footer-content footer__half">
                 <div class=" footer__address">
                     <ul>
@@ -14,10 +14,10 @@
                         <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
                         <li class="footer__mail">
                             <div class="footer__mail_grid">
-                                <div>или напишите нам <br />
+                                <div class="write__us">или напишите нам <br />
                                     <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
                                 </div>
-                                <div style="display: flex;gap: 20px;">
+                                <div style="display: flex;gap: 20px;" class="social-icons">
                                     <a href=""><img style="width:36px;" src="/wp-content/themes/artfactor/images/tpg_png.png"></a>
                                     <a href=""><img src="/wp-content/themes/artfactor/images/logos_whatsapp-icon.svg"></a>
                                 </div>
@@ -27,11 +27,11 @@
                 </div>
             </div>
 
-            <div class="footer-content" style="padding-right:0;">
+            <div class="footer-content" style="">
                 <div class="footer__info footer__menu" style="">
-                    <div class=" footer__links">
+                    <div class="footer__links">
                         <ul>
-                            <li><a href="/o-proekte/">О проекте</a></li>
+                            <li><a href="/o-proekte/">Проект зубнадзор</a></li>
                             <li><a href="/zubnadzor-razyasnyaet/">Зубнадзор разъясняет</a></li>
                             <li><a href="/ne-mogu-molchat/">Не могу молчать!</a></li>
                             <li><a href="">Ваша помощь</a></li>
@@ -56,8 +56,8 @@
                 </div>
             </div>
         </div>
-        <div class="container container_flex footer__madeby">
-            <hr style="border:1px solid rgba(255,255,255,0.1);" class="footer-content">
+        <hr style="border:1px solid rgba(255,255,255,0.1);" class="footer-content footer__divider">
+        <div class="container_flex footer__madeby">
             <div class=" copyright">© Любое использование либо копирование материалов или подборки материалов сайта, допускается лишь с разрешения правообладателя и только со ссылкой на источник: www.zubnadzor.org</div>
             <div class="byartfactor"> Создание сайта <a href="https://artfactor.ru">АртФактор</a></div>
         </div>

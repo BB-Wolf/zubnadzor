@@ -1,0 +1,451 @@
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .main {
+        margin-bottom: 90px;
+    }
+
+    .header__logo {
+        position: relative;
+        position: relative;
+        height: 100px;
+        width: 100%;
+        
+    padding-left: 0;
+    }
+
+    .header__logo a img {
+        position: absolute;
+        top: 0;
+        height: 100px;
+    }
+
+    .header__container {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .header__companyname {
+        display: none;
+    }
+
+    .main-banner-container__center {
+        padding: 0 !important;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0 11px 0px 11px;
+        box-sizing: border-box;
+    }
+
+
+    .__withsub:after {
+        color: #474858;
+        content: '';
+
+    }
+
+    .about-us {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-us,
+    .mission {
+        gap: 0;
+    }
+
+    .about-us__title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mission {
+        padding-top: 60px;
+    }
+
+    .directions {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-us__h1,
+    .mission__h1 {
+        padding-top: 0px;
+    }
+
+    .mission__title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-us__text,
+    .mission__text,
+    .directions {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+
+    .about-us__text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-us__text_big {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .mission__title .mission__text {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .mission__text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mission__text p {
+        margin: 0;
+    }
+
+    .directions__panes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .directions__pane {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 204px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
+        text-decoration: none;
+        cursor: pointer;
+        border: 0px;
+        transition: all 0.2s ease-in;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile__menu {
+        width: 100%;
+        background: white;
+    }
+
+    .mobile__menu .nav-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .main-banner__text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 11px;
+        padding-right: 11px;
+        font-family: Oswald;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #fff;
+        margin: 0;
+        width: 95%;
+    }
+
+    .main-banner__img {
+        background-repeat: no-repeat;
+        background-position: right;
+        min-height: 370px;
+        width: 100%;
+        height: 370px;
+    }
+
+    .page__h2 {
+        word-wrap: break-word;
+    }
+
+
+
+    .form__group_mobile {
+        flex-direction: column;
+    }
+
+    #rukovodstvo .page__content {
+        padding-left: 0;
+    }
+
+    #rukovodstvo .ml_25 {
+        margin-left: 15px;
+    }
+
+    .page__content {
+        width: 100% !important;
+    }
+
+    #contacts {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .blockquote {
+        padding: 20px;
+        margin:40px 0px 40px 0px;
+        background-position: 20px 20px;
+         text-indent: 50px;
+    }
+
+    
+    .redquotes {
+        text-indent: 50px;
+        background-position: 10px 100px;
+
+    }
+
+
+    .redquotes {
+        padding:0;
+    }
+
+    .redquotes::before {
+        margin-left: 0;
+    }
+
+
+
+    .donate {
+        grid-template-columns: 100%;
+    }
+
+    .donate__text {
+        font-size: 14px;
+    }
+
+    .left__column {
+        align-items: center;
+    }
+
+
+    .table__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .table__cell {
+        text-align: center;
+    }
+
+    .table__row .table__cell:first-child {
+        text-align: center;
+
+    }
+
+    .table__row .table__cell:last-child {
+        text-align: center;
+    }
+
+    .page__documentslist li {
+        padding: 13px 2px 15px 70px;
+        width: 90%;
+    }
+
+    #cantstop .page__content {
+        width: 80%;
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .youtube_video {
+        background-position: center;
+        background-size: contain;
+    }
+
+
+    footer {
+        background-image: url('/wp-content/themes/artfactor/images/mobile_footer.png');
+        background-size: contain;
+        background-position: center bottom;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0px 11px 0px 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+
+    .footer-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .company {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+    }
+
+
+    .footer .write__us {
+        display: block;
+    }
+    .footer__address ul {
+        padding-left: 20px;
+        margin-bottom:0px;
+    }
+
+    .footer__address ul li {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .footer__mail_grid{
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+    }
+    .footer__mail::before{
+        top:28px;
+    }
+
+    .footer__menu {
+        grid-template-columns: 1fr !important;
+    }
+
+    .footer .container_grid{
+       gap:20px;
+    }
+    .footer .social-icons{
+        margin-top:40px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .footer__madeby {
+        padding-top:10px;
+        padding-left: 0px;
+    }
+
+    .footer__menu .footer__links:last-of-type{
+        padding-bottom:60px;
+    }
+
+    .footer__links ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__links ul li{
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+    
+    .footer__info{
+        padding-top:0px;
+            padding-left: 20px;
+    }
+
+    .footer__divider{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    }
+
+    .footer .copyright{
+        width: 100%;
+    }
+
+    .m_pl-0 {
+        padding-left: 0px;
+    }
+
+    .contact__form {
+        padding: 7px;
+    }
+
+    .form__group {
+        flex-direction: column;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .form__group input[type="text"] {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .qrcode {
+        padding-left: 0px;
+        height: unset;
+    }
+
+
+    .banner {
+        height: 40px;
+            min-height: 40px;
+
+    }
+
+    .container_grid {
+        gap: 30px;
+    }
+
+    .scrollToTop {
+        right: 0;
+        bottom: 0;
+    }
+
+
+    .icon__users{
+    background: url(/wp-content/themes/artfactor/images/users.svg) no-repeat center top 5%;
+    list-style: none;
+    padding: 43px 57px 15px 57px !important;
+    }
+    .icon__edit{
+    background: url(/wp-content/themes/artfactor/images/edit.svg)  no-repeat center top 5%;
+    list-style: none;
+    padding: 43px 57px 15px 57px !important;
+
+    }
+}

@@ -80,6 +80,7 @@ a {
 .header__logo{
   padding-top:7px;
   margin-bottom: -7px;
+  padding-left: 22px;
 }
 
 .header__address {
@@ -398,7 +399,7 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
   max-width: 1500px;
   padding: 0 30px;
   margin: 0 auto;
-  box-sizing: initial;
+  box-sizing: border-box;
   height: auto;
 
 }
@@ -502,6 +503,10 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
 }
 
 
+.contacts__page{
+   grid-template-columns:1fr 2fr;
+}
+
 
 .contacts__address>li,
 .contacts__address li a {
@@ -577,7 +582,7 @@ background-image: url(/wp-content/themes/artfactor/images/drop.svg) !important;
   margin-top: -130px;
   margin-left: -4px;
   margin-right: -6px;
-
+      padding-left: 27px;
 }
 
 .main-banner_wrapper {
@@ -932,6 +937,7 @@ padding-top:10px;
   grid-template-rows: 2fr;
   grid-template-columns: 1fr 3fr;
   gap: 32px;
+  margin-bottom:50px;
 }
 
 .directions__pane {
@@ -1043,8 +1049,8 @@ footer .company {
 }
 
 .page {
-  padding-left: 73px;
-  grid-template-columns: 1fr 2fr;
+  padding-left: 65px;
+  gap:240px;
   align-items: unset;
   margin-top: 100px;
 }
@@ -1438,6 +1444,7 @@ text-decoration: underline;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-shrink: 0;
 }
 
 .copyright{
@@ -1463,6 +1470,9 @@ text-align: left;
 color:#E1E2ED;
 }
 
+.yandexmap{
+  width: 100%;
+}
 .byartfactor a{
   text-decoration: underline;
 }
@@ -1664,6 +1674,10 @@ background-position: center center;
  100% { transform: translateX(0) }
 }
 
+
+.yourlink__here{
+  width: 100%;
+}
 .scrollToTop{
   width:40px;
   height:40px;
