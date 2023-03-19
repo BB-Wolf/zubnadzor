@@ -9,8 +9,8 @@
         position: relative;
         height: 100px;
         width: 100%;
-        
-    padding-left: 0;
+
+        padding-left: 0;
     }
 
     .header__logo a img {
@@ -213,12 +213,12 @@
 
     .blockquote {
         padding: 20px;
-        margin:40px 0px 40px 0px;
+        margin: 40px 0px 40px 0px;
         background-position: 20px 20px;
-         text-indent: 50px;
+        text-indent: 50px;
     }
 
-    
+
     .redquotes {
         text-indent: 50px;
         background-position: 10px 100px;
@@ -227,7 +227,7 @@
 
 
     .redquotes {
-        padding:0;
+        padding: 0;
     }
 
     .redquotes::before {
@@ -246,6 +246,8 @@
 
     .left__column {
         align-items: center;
+        flex-shrink: 1;
+
     }
 
 
@@ -325,9 +327,10 @@
     .footer .write__us {
         display: block;
     }
+
     .footer__address ul {
         padding-left: 20px;
-        margin-bottom:0px;
+        margin-bottom: 0px;
     }
 
     .footer__address ul li {
@@ -340,59 +343,61 @@
 
     }
 
-    .footer__mail_grid{
+    .footer__mail_grid {
         grid-template-columns: 1fr;
         padding-bottom: 20px;
     }
-    .footer__mail::before{
-        top:28px;
+
+    .footer__mail::before {
+        top: 28px;
     }
 
     .footer__menu {
         grid-template-columns: 1fr !important;
     }
 
-    .footer .container_grid{
-       gap:20px;
+    .footer .container_grid {
+        gap: 20px;
     }
-    .footer .social-icons{
-        margin-top:40px;
-        margin-left:auto;
-        margin-right:auto;
+
+    .footer .social-icons {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__madeby {
-        padding-top:10px;
+        padding-top: 10px;
         padding-left: 0px;
     }
 
-    .footer__menu .footer__links:last-of-type{
-        padding-bottom:60px;
+    .footer__menu .footer__links:last-of-type {
+        padding-bottom: 60px;
     }
 
-    .footer__links ul{
+    .footer__links ul {
         margin: 0;
         padding: 0;
     }
 
-    .footer__links ul li{
-        padding-top:15px;
-        padding-bottom:15px;
-    }
-    
-    .footer__info{
-        padding-top:0px;
-            padding-left: 20px;
+    .footer__links ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
-    .footer__divider{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    box-sizing: border-box;
+    .footer__info {
+        padding-top: 0px;
+        padding-left: 20px;
     }
 
-    .footer .copyright{
+    .footer__divider {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    .footer .copyright {
         width: 100%;
     }
 
@@ -423,7 +428,7 @@
 
     .banner {
         height: 40px;
-            min-height: 40px;
+        min-height: 40px;
 
     }
 
@@ -437,15 +442,16 @@
     }
 
 
-    .icon__users{
-    background: url(/wp-content/themes/artfactor/images/users.svg) no-repeat center top 5%;
-    list-style: none;
-    padding: 43px 57px 15px 57px !important;
+    .icon__users {
+        background: url(/wp-content/themes/artfactor/images/users.svg) no-repeat center top 5%;
+        list-style: none;
+        padding: 43px 57px 15px 57px !important;
     }
-    .icon__edit{
-    background: url(/wp-content/themes/artfactor/images/edit.svg)  no-repeat center top 5%;
-    list-style: none;
-    padding: 43px 57px 15px 57px !important;
+
+    .icon__edit {
+        background: url(/wp-content/themes/artfactor/images/edit.svg) no-repeat center top 5%;
+        list-style: none;
+        padding: 43px 57px 15px 57px !important;
 
     }
 }

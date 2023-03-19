@@ -80,6 +80,17 @@ color: #A6A7BD;
   .header__phone {
     margin: 0;
   }
+
+  .page{
+    gap:120px;
+  }
+  .left__column{
+    flex-shrink: 1;
+  }
+
+  .banner{
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -192,7 +203,11 @@ color: #A6A7BD;
   }
 
   #rukovodstvo .page__content {
-    padding-left: 32px;
+    padding-left: 0px;
+  }
+
+  #rukovodstvo .left__column {
+    width: 100%;
   }
 
   .container_grid {
@@ -222,9 +237,9 @@ color: #A6A7BD;
 
 
   .blockquote {
-    padding: 100px;
+    padding: 50px;
     width: 100%;
-    background-position: 40px 100px;
+    background-position: top 19% left 2%;
   }
 
   .redquotes {
