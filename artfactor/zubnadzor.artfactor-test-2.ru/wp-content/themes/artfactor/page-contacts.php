@@ -31,12 +31,12 @@ Template Name: Контакты
                  "></div>
             <? endif; ?>
         </div>
-        <div id="contacts" class="page__content">
+        <div id="contacts" class="page__content" style="margin-bottom:0px;">
             <? require_once(get_template_directory() . '/include/contacts.php'); ?>
             <div class="page__content">
                 <?= the_content(); ?>
 
-                <div class="contact__form">
+                <div id="contact_form" class="contact__form">
                     <div class="page__h1 page__h2_blue pt_60 pb_16">Заполните форму, и мы с Вами свяжемся!</div>
                     <form>
                         <div class="form__group">
@@ -49,6 +49,7 @@ Template Name: Контакты
                         </div>
                         <div class="form__group">
                             <input type="text" placeholder="Тема обращения" name="reason_topic">
+                            <input type="hidden"  name="isjs">
                         </div>
                         <div class="form__group">
                             <textarea placeholder="Текст вашего обращения" name="reason_text"></textarea>

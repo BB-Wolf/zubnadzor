@@ -2,11 +2,11 @@
 ?>
 
 <div id="donations" class="container container_flex page" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
-  <div class="left__column" style="width: 360px;">
+  <div class="left__column" style="">
     <div class="page__title">Ваша помощь</div>
     <div class="page__leftimg"></div>
   </div>
-  <div class="page__content container_grid" style="grid-template-columns: 80%; text-align: left; gap: 30px;margin-bottom:50px;">
+  <div class="page__content container_grid" style="grid-template-columns: 80%; text-align: left; gap: 30px;margin-bottom:0px;">
     <div>
       Поддержите Центр «Зубнадзор», переведя любую сумму пожертвования. В
       основании платежа укажите: "Взнос на уставные цели" <p>
@@ -37,4 +37,6 @@
       <div> к/с 301018100400000000225</div>
       </>
     </div>
+
+    <div style="margin-top:40px;"><a class="oferta" href="/oferta/">Публичная оферта о заключении договора пожертвования</a></div>
   </div>

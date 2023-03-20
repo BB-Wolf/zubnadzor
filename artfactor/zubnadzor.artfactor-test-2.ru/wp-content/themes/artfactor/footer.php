@@ -1,8 +1,8 @@
 <footer>
     <div class="footer">
         <div class="footer-content">
-            <div class="company">Автономная некоммерческая организация<br />
-                Центр координации и поддержки стоматологических пациентов «Зубнадзор»
+            <div class="company">АНО «Центр Координации и поддержки<br />
+                cтоматологических пациентов «Зубнадзор»
             </div>
         </div>
         <div class="container_grid footer__wrapper">
@@ -10,12 +10,13 @@
                 <div class=" footer__address">
                     <ul>
                         <li class="footer__pin"><span>г. Москва,<br />
-                                ул. Кржижановского, д. 21 А</span></li>
+                                ул. Кржижановского, д. &nbsp;21&nbsp;А</span></li>
+                    <li class="footer__mail feedback">Напишите нам</li>
                         <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
                         <li class="footer__mail">
                             <div class="footer__mail_grid">
-                                <div class="write__us">или напишите нам <br />
-                                    <a href="mailto:info@zubnadzor.ru"><?= esc_html(get_option('contact_email')); ?></a>
+                                <div class="write__us feedback">
+                                    <a><?= esc_html(get_option('contact_email')); ?></a>
                                 </div>
                                 <div style="display: flex;gap: 20px;" class="social-icons">
                                     <a href=""><img style="width:36px;" src="/wp-content/themes/artfactor/images/tpg_png.png"></a>
@@ -34,7 +35,7 @@
                             <li><a href="/o-proekte/">Проект зубнадзор</a></li>
                             <li><a href="/zubnadzor-razyasnyaet/">Зубнадзор разъясняет</a></li>
                             <li><a href="/ne-mogu-molchat/">Не могу молчать!</a></li>
-                            <li><a href="">Ваша помощь</a></li>
+                            <li><a href="/o-proekte/#donations">Ваша помощь</a></li>
                         </ul>
                     </div>
                     <div class="footer__links">
@@ -42,15 +43,15 @@
                             <li><a href="/dokumenty/">Документы</a></li>
                             <li><a href="/infoblog/">Инфоблог</a></li>
                             <li><a href="/uslugi/">Услуги</a></li>
-                            <li><a href="">Обратная связь</a></li>
+                            <li><a href="/kontakty/#contact_form">Обратная связь</a></li>
                         </ul>
                     </div>
                     <div class="footer__links">
                         <ul>
                             <li><a href="/kontakty/">Контакты</a></li>
                             <li><a href="/sotrudnichestvo/">Сотрудничество</a></li>
-                            <li><a href="">Политика конфиденциальности</a></li>
-                            <li><a href="">Условия обработки персональных данных</a></li>
+                            <li><a href="/politika-konfidentsialnosti/">Политика конфиденциальности</a></li>
+                            <li><a href="/usloviya-obrabotki-personalnyh-dannyh/">Условия обработки персональных данных</a></li>
                         </ul>
                     </div>
                 </div>
@@ -58,7 +59,7 @@
         </div>
         <hr style="border:1px solid rgba(255,255,255,0.1);" class="footer-content footer__divider">
         <div class="container_flex footer__madeby">
-            <div class=" copyright">© Любое использование либо копирование материалов или подборки материалов сайта, допускается лишь с разрешения правообладателя и только со ссылкой на источник: www.zubnadzor.org</div>
+            <div class=" copyright">© АНО «Зубнадзор», 2022-<?= date('Y', time()); ?> Любое использование либо копирование материалов или подборки материалов сайта, допускается лишь с разрешения правообладателя и только со ссылкой на источник: www.zubnadzor.ru</div>
             <div class="byartfactor"> Создание сайта <a href="https://artfactor.ru">АртФактор</a></div>
         </div>
     </div>
@@ -67,7 +68,7 @@
 <div id="modal" class="modal-footer">
     <div class="modal-background">
         <div class="contact__form modal">
-            <div class="button__close">x</div>
+            <div class="button__close"><img src="/wp-content/themes/artfactor/images/close.svg"></div>
             <div class="page__h1 page__h2_blue pt_60 pb_16">Заполните форму, и мы с Вами свяжемся!</div>
             <form>
                 <div class="form__group">
@@ -106,7 +107,12 @@
 </div>
 
 <div class="scrollToTop"></div>
-
+<?if(!isset($_COOKIE['cookie__agree'])):?>
+<div class="using__cookie">
+    <div class="using__cookie__text">Для корректной работы сайта необходимо использование cookies. Продолжая использовать сайт, вы даёте своё согласие на работу с этими файлами. </div>
+    <div class="send-button cookie__agree">Согласен</div>
+</div>
+<?endif;?>
 <script>
     AOS.init({
         once: true

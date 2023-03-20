@@ -31,7 +31,7 @@
                 <div class="header__address">
                     <ul>
                         <li class="header__phone"> <a href="tel:+<?= str_replace(['+', ' ', '-', '(', ')'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
-                        <li class="header__mail "><a href="mailto:<?= esc_html(get_option('contact_email', '')) ?>"></a></li>
+                        <li class="header__mail feedback"><a></a></a></li>
                         <li class="search icon__search" onclick="toggleSearch();"></li>
                         <li class="search__field">
                             <form style="width:100%;">

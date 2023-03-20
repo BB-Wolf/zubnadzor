@@ -31,7 +31,7 @@ Template Name: About project
                  "></div>
         <? endif; ?>
     </div>
-    <div class=" page__content"><?= the_content(); ?></div>
+    <div class=" page__content mb_60"><?= the_content(); ?></div>
 
     </div>
     <hr class="container">
