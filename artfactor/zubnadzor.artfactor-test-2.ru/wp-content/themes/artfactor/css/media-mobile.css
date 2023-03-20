@@ -559,6 +559,6 @@ text-transform: capitalize;
         display: none;
     }
       .m-detail__img{
-    display: block;
+    display: none;
   }
 }
