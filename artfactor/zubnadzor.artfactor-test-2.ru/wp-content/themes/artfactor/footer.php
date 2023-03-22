@@ -11,7 +11,7 @@
                     <ul>
                         <li class="footer__pin"><span>г. Москва,<br />
                                 ул. Кржижановского, д. &nbsp;21&nbsp;А</span></li>
-                    <li class="footer__mail feedback">Напишите нам</li>
+                    <li class="footer__mail feedback" onClick="scroll(0,0); return false">Напишите нам</li>
                         <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
                         <li class="footer__mail">
                             <div class="footer__mail_grid">
@@ -96,7 +96,7 @@
                             <label>Юридическое лицо</label>
                         </div>
                     </div>
-                    <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на обработку персональных данных
+                    <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на <a href="/usloviya-obrabotki-personalnyh-dannyh/" target="_blank">обработку персональных данных</a>
                             и с политикой конфиденциальности.</label></div>
                     <div><button class="send-button">Отправить</button></div>
                 </div>

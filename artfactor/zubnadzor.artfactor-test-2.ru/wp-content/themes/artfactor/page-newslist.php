@@ -11,11 +11,14 @@ Template Name: Инфоблог Список
         <div class="content banner" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine" <?php if (has_post_thumbnail($post->ID)) : ?> <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?> <? // echo '<img src="' . $image[0] . '" alt="' . get_the_title() . '" />';                                                                                                                                                                                                                                                                  
                                                                                                                                                                                                                                                                         ?> style="background-image:url(<?= $image[0] ?>);" <? ?> <?php endif; ?>>
         </div>
+        <div class="container content">
+            <div class=" breadcrumbs"><?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?></div>
+        </div>
     </div>
-    <div class="container container_grid" style="margin-top:100px; margin-bottom:20px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    <div class="container container_grid blog" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="page__title"><?= get_the_title(); ?></div>
     </div>
-    <div class="container container_grid page" style="grid-template-rows:1fr;grid-template-columns:1fr;margin-top:50px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    <div class="container container_grid page" style="grid-template-rows:1fr;grid-template-columns:1fr;margin-top:20px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="page__content">
             <?php
             global $post;

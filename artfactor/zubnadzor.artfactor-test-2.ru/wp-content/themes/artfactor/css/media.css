@@ -477,7 +477,11 @@ color: #A6A7BD;
     margin-top: 60px;
     padding-bottom: 30px;
   }
-
+  .blog .page__title {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  
   .company {
     padding-top: 20px;
   }
@@ -852,8 +856,11 @@ color: #A6A7BD;
 
   .modal{
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
   }
+  #modal, .modal-footer {
+    padding: 0px 10px 40px 10px;
+}
 
   .modal .page__h1{
 font-family: Oswald;
@@ -933,10 +940,27 @@ text-transform: capitalize;
 
         height: unset;
     }
-
+    .using__cookie {
+      flex-direction: column;
+  }
+  .using__cookie__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px;
+    text-align: justify;
+  }
+  .send-button {
+    padding: 7px 40px 7px 40px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-
+/* #modal, .modal-footer {
+  position: absolute;
+} */
+}
 
 
 
