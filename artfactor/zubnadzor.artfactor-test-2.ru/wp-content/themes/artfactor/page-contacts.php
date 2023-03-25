@@ -65,7 +65,7 @@ Template Name: Контакты
                                     <label>Юридическое лицо</label>
                                 </div>
                             </div>
-                            <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на <a href="/usloviya-obrabotki-personalnyh-dannyh/" target="_blank">обработку персональных данных</a>
+                            <div class="license__agree"><input type="checkbox" name="license_agreement" checked><label>Я согласен на <a href="/usloviya-obrabotki-personalnyh-dannyh/" target="_blank">обработку персональных данных</a>
                                     и с политикой конфиденциальности.</label></div>
                             <div><button class="send-button">Отправить</button></div>
                         </div>

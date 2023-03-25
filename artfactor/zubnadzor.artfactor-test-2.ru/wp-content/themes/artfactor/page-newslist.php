@@ -18,7 +18,7 @@ Template Name: Инфоблог Список
     <div class="container container_grid blog" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="page__title"><?= get_the_title(); ?></div>
     </div>
-    <div class="container container_grid page" style="grid-template-rows:1fr;grid-template-columns:1fr;margin-top:20px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    <div class="container container_grid page infoblog" style="grid-template-rows:1fr;grid-template-columns:1fr;margin-top:20px;" data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <div class="page__content">
             <?php
             global $post;
@@ -31,11 +31,11 @@ Template Name: Инфоблог Список
                         <div class="page__h2"><a class="page__h2" style="color:inherit;" href="<? the_permalink(); ?>"><?= the_title(); ?></a></div>
                         <!--datr stuff-->
                         <div class="stuff__wrapper">
-                            <div class="page__muted">
+                            <div class="page__muted page__cat">
                                 <? the_category(); ?>
                             </div>
                             <div class="page__date page__muted">
-                                <? the_date(); ?>
+                                <? the_date(); ?> г
                             </div>
                             <div class="page__muted page__share">Поделиться</div>
                         </div>
@@ -50,11 +50,13 @@ Template Name: Инфоблог Список
                     <div class="detail__img">
                         <?php the_post_thumbnail(); ?>
                     </div>
+                    <a class="page_more" style="color:inherit;" href="<? the_permalink(); ?>">Подробнее</a>
                 </div>
             <? } ?>
         </div>
     </div>
     <?php wp_reset_postdata();  ?>
+
 
 </main>
 <?
