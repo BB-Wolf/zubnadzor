@@ -1,7 +1,7 @@
 <footer>
     <div class="footer">
         <div class="footer-content">
-            <div class="company">АНО «Центр Координации и поддержки<br />
+            <div class="company">АНО «Центр координации и поддержки<br />
                 cтоматологических пациентов «Зубнадзор»
             </div>
         </div>
@@ -11,12 +11,12 @@
                     <ul>
                         <li class="footer__pin"><span>г. Москва,<br />
                                 ул. Кржижановского, д. &nbsp;21&nbsp;А</span></li>
-                    <li class="footer__mail feedback" onClick="scroll(0,0); return false">Напишите нам</li>
+                    <li class="footer__mail feedback" onClick="scroll(0,0); return false">Обратная связь</li>
                         <li class="footer__phone"><a style="color:white" href="tel:+<?= str_replace(['+', ' ', '-'], '', esc_html(get_option('contact_phone', ''))) ?>"><?= esc_html(get_option('contact_phone', '')); ?></a></li>
                         <li class="footer__mail">
                             <div class="footer__mail_grid">
-                                <div class="write__us feedback">
-                                    <a><?= esc_html(get_option('contact_email')); ?></a>
+                                <div class="write__us feedback-none">
+                                    <a href="mailto:<?= esc_html(get_option('contact_email')); ?>"><?= esc_html(get_option('contact_email')); ?></a>
                                 </div>
                                 <div style="display: flex;gap: 20px;" class="social-icons">
                                     <a href=""><img style="width:36px;" src="/wp-content/themes/artfactor/images/tpg_png.png"></a>
@@ -32,7 +32,7 @@
                 <div class="footer__info footer__menu" style="">
                     <div class="footer__links">
                         <ul>
-                            <li><a href="/o-proekte/">Проект зубнадзор</a></li>
+                            <li><a href="/o-proekte/">О проекте</a></li>
                             <li><a href="/zubnadzor-razyasnyaet/">Зубнадзор разъясняет</a></li>
                             <li><a href="/ne-mogu-molchat/">Не могу молчать!</a></li>
                             <li><a href="/o-proekte/#donations">Ваша помощь</a></li>
@@ -43,7 +43,7 @@
                             <li><a href="/dokumenty/">Документы</a></li>
                             <li><a href="/infoblog/">Инфоблог</a></li>
                             <li><a href="/uslugi/">Услуги</a></li>
-                            <li><a href="/kontakty/#contact_form">Обратная связь</a></li>
+                            <!-- <li><a href="/kontakty/#contact_form">Обратная связь</a></li> -->
                         </ul>
                     </div>
                     <div class="footer__links">

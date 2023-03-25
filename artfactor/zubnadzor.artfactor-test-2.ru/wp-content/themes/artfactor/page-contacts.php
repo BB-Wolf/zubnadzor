@@ -33,7 +33,7 @@ Template Name: Контакты
         </div>
         <div id="contacts" class="page__content" style="margin-bottom:0px;">
             <? require_once(get_template_directory() . '/include/contacts.php'); ?>
-            <div class="page__content">
+            <div class="">
                 <?= the_content(); ?>
 
                 <div id="contact_form" class="contact__form">
@@ -65,7 +65,7 @@ Template Name: Контакты
                                     <label>Юридическое лицо</label>
                                 </div>
                             </div>
-                            <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на обработку персональных данных
+                            <div class="license__agree"><input type="checkbox" name="license_agreement"><label>Я согласен на <a href="/usloviya-obrabotki-personalnyh-dannyh/" target="_blank">обработку персональных данных</a>
                                     и с политикой конфиденциальности.</label></div>
                             <div><button class="send-button">Отправить</button></div>
                         </div>

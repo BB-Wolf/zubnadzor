@@ -408,7 +408,7 @@ text-transform: capitalize;
     }
 
     .footer__mail::before {
-        top: 28px;
+        top: 24px;
     }
 
     .footer__menu {

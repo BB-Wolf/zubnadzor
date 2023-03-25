@@ -780,6 +780,9 @@ footer hr {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
 }
+.footer__mail  {
+  cursor: pointer;
+}
 
 .footer__mail a {
   color: white;
@@ -1017,7 +1020,7 @@ footer .company {
   font-family: 'Montserrat';
   font-size: 22px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
@@ -1396,6 +1399,9 @@ footer .company {
   cursor: pointer;
   transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out, filter 0.2s ease-in;
   margin-right:7px;
+}
+.using__cookie .send-button {
+  margin-right:20px;
 }
 
 .send-button:hover {
@@ -1807,13 +1813,16 @@ button.send-button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color:#8FC4FF;
-  color:#fff;
+  /* background-color:#8FC4FF;
+  color:#fff; */
+  background-color:#fff;
+  color:#474858;
   z-index:200;
 }
 
 .using__cookie__text{
-  color:#fff;
+  /* color:#fff; */
+  color:#474858;
   padding:20px;
 }
 
