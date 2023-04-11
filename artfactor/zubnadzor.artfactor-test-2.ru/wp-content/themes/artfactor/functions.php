@@ -517,3 +517,19 @@ class Kama_Breadcrumbs
         return $add_to;
     }
 }
+
+
+function apply_highlight($the_content, $the_query)
+{
+    return preg_replace('/' . $the_query . '/i', '<span style="background-color: rgba(0,0,255,0.1)">$0</span>', $the_content);
+}
+
+
+function formatPreview($content){
+    $formated = '';
+    if (preg_match('/^.{1,260}\b/s', $content, $match)) {
+        $formated = $match[0];
+    }
+
+    return $formated;
+}

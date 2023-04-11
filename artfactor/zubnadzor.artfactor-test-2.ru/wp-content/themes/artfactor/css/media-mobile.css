@@ -1,8 +1,5 @@
 /* @media screen and (min-width:320px) and (max-width:767px) { */
 @media only screen and (max-width:767px) {
-.main {
-        margin-bottom: 90px;
-}
 .m-menu .menu-item a:hover{
      transition: color 0.2s ease-in,border-bottom 0.2s ease-in;
     color: #474858;
@@ -57,9 +54,8 @@ text-transform: capitalize;
     .header__logo {
         position: relative;
         position: relative;
-        height: 100px;
-        width: 100%;
-
+        height: auto;
+        width: 240px;
         padding-left: 0;
     }
 
@@ -75,8 +71,22 @@ text-transform: capitalize;
     }
 
     .header__companyname {
-        display: none;
+        order: 3;
+				width: 100%;
+				text-align: center;
     }
+		.header__text, .header__text_muted {
+     max-width: none;
+		 font-size: 13px;
+		 padding-top: 3px;
+		}
+		.header__text_muted {
+		 font-size: 11px;
+		 padding-top: 0;
+		}
+		.header__container {
+				flex-wrap: wrap;
+		}
 
     .main-banner-container__center {
         padding: 0 !important;
@@ -89,12 +99,14 @@ text-transform: capitalize;
         padding: 0 11px 0px 11px;
         box-sizing: border-box;
     }
-
+    .content.banner.admins {
+        background-position: right -555px top 0;
+    }
 
 
     .about-us {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 40px;
+				padding-bottom: 50px;
     }
 
     .about-us,
@@ -119,13 +131,15 @@ text-transform: capitalize;
     .about-us__h1,
     .mission__h1 {
         padding-top: 0px;
+				font-size: 36px;
     }
 
     .mission__title {
         margin: 0;
         padding: 0;
     }
-
+     
+		.page__content, 
     .about-us__text,
     .mission__text,
     .directions {
@@ -357,7 +371,6 @@ text-transform: capitalize;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-
     }
 
 
@@ -368,9 +381,9 @@ text-transform: capitalize;
 
     footer .company {
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
-        line-height: 17px;
+        line-height: 22px;
         letter-spacing: 0em;
         text-align: left;
         padding: 30px 0px 0px 0px;
@@ -405,7 +418,7 @@ text-transform: capitalize;
         padding-bottom: 20px;
     }
 
-    .footer__mail::before {
+    .footer__mail::before, .footer__mail.mail::before {
         top: 24px;
     }
 
@@ -472,10 +485,14 @@ text-transform: capitalize;
         margin-left: 0px;
     }
 
-    .form__group input[type="text"] {
+    .form__group input[type="text"], .holder {
         width: 100%;
         padding-left: 0;
     }
+		
+		.holder label.error {
+				bottom: -17px;
+		}
 
     .form__customer {
         width: 100%;
@@ -489,12 +506,14 @@ text-transform: capitalize;
         padding-left: 0px;
         height: unset;
     }
-
-
     .banner {
-        height: 40px;
-        min-height: 40px;
-
+        height: 200px;
+        /* height: 40px; */
+        min-height: 200px;
+        /* min-height: 40px; */
+    }
+    .content.banner {
+        background-position: right -150px top 0px;
     }
 
     .container_grid {
@@ -559,4 +578,45 @@ text-transform: capitalize;
       .m-detail__img{
     display: none;
   }
+
+	.header__text {
+    font-size: 16px;
+    line-height: 19px;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.form__group {
+    gap: 4px;
+    padding: 2px;
+	}
+	.form__group input[type="text"] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+	}
+	.form__group textarea {
+    min-height: 30px;
+    padding-top: 10px;
+	}
+	.modal .page__h1, .contact__form .page__h1 {
+		padding-top: 10px;
+    padding-bottom: 10px;
+	}
+	.holder label.error {
+			padding: 0px 4px;
+			font-size: 11px;
+	}
+
+}
+
+
+@media only screen and (max-width: 480px){
+	.header__logo {
+		width: 140px;
+	}	
+	.header__address {
+    width: 150px;
+		padding-top: 28px;
+	}
+	
 }

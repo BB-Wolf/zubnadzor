@@ -34,10 +34,10 @@
                         <li class="header__mail feedback"><a></a></a></li>
                         <li class="search icon__search" onclick="toggleSearch();"></li>
                         <li class="search__field">
-                            <form style="width:100%;">
+                            <form style="width:100%;" action="/poisk/" method="get">
                                 <div style="display:flex;align-items:center; width:100%;">
                                     <span class="cross-stand-alone" onclick="toggleSearch();"></span>
-                                    <input type="text" class="">
+                                    <input type="text" class="" name="q">
                                 </div>
                             </form>
                         </li>

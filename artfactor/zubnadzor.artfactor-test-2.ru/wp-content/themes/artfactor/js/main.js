@@ -103,7 +103,7 @@ $(function () {
     }
   });
 
-  $("form").submit(function (e) {
+  $(".modal form").submit(function (e) {
     e.preventDefault();
     $('<input type="hidden" name="isjs" value="1">').appendTo($("form"));
 
